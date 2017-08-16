@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "description": "My portfolio integrated with handlebars",
   "scripts": {
-    "clean:css": "rimraf css/main.css",
+    "clean:css": "rimraf css/main.css && rimraf css/dependencies.css && rimraf css/styles.css && rimraf css/styles.min.css",
     "build:css": "run-s clean:css _build:css",
-    "_build:css": "node-sass css/sass/main.scss css/main.css",
+    "_build:css": "node-sass css/sass/main.scss css/main.css && npm run concat:css-dependencies && npm run concat:css-all && npm run minify:css",
     "watch:css": "run-s build:css _watch:css",
-    "_watch:css": "chokidar css/sass/**/* -c \"npm run build:css\""
+    "_watch:css": "chokidar css/sass/**/* -c \"npm run build:css\"",
+    "watch:css-dependencies": "run-s build:css-dependencies _watch:css-dependencies",
+    "_watch:css-dependencies": "chokidar css/dependencies/**/* -c \"npm run build:css\"",
+    "concat:css-dependencies": "cat css/dependencies/* > css/dependencies.css",
+    "concat:css-all": "cat css/dependencies.css css/main.css > css/styles.css",
+    "minify:css": "minify --output css/styles.min.css css/styles.css"
   },
   "author": "Aaron McAvinue",
   "license": "UNLICENSED",
@@ -19,5 +24,7 @@
     "npm-run-all": "^4.0.1",
     "rimraf": "^2.5.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "minifier": "^0.8.1"
+  }
 }
