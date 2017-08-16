@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
+    <link href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?rd5re8" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Aaron McAvinue | Artworks</title>
+</head>
+<body id="art-body">
+  <header id="art-header">
+    <div class="name">
+      <h1>Aaron McAvinue</h1>
+      <h4>Digital Artist</h4>
+    </div>
+    
+    <div class="social">
+      <a href="mailto:aaronmcavinue@gmail.com" class="socicon-mail"></a>
+      <a href="https://www.twitter.com/aaronmcavinue" target="_blank" class="socicon-twitter"></a>
+      <a href="https://www.instagram.com/aaronmcavinue" target="_blank" class="socicon-instagram"></a>
+      <a href="https://www.linkedin.com/in/amcavinue" target="_blank" class="socicon-linkedin"></a>
+      <a href="https://www.github.com/amcavinue" target="_blank" class="socicon-github"></a>
+    </div>
+    
+    <a class="other-site" href="/index.html">Also see my code ></a>
+  </header>
+  
+  <section id="art-intro">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <form id="filter-form" action="" method="">
+          <legend><h2>Filters</h2></legend>
+          <fieldset id="filters-fieldset">
+            <div class="form-group">
+              <label for="name">Image Contains</label>
+              <input type="text" id="contains" name="contains">
+            </div>
+            
+            <label for="tag-list">Years</label>
+            <div class="tag-list-container">
+              <ul class="tag-list" id="tag-list">
+                <li>
+                  <input id="2012" type="checkbox" class="checkbox" name="2012">
+                  <label class="check-label" for="2012">2012 & Prior</label>
+                </li>
+                <li>
+                  <input id="2013" type="checkbox" class="checkbox" name="2013">
+                  <label class="check-label" for="2013">2013</label>
+                </li>
+                <li>
+                  <input id="2015" type="checkbox" class="checkbox" name="2015">
+                  <label class="check-label" for="2015">2015</label>
+                </li>
+                <li>
+                  <input id="2016" type="checkbox" class="checkbox" name="2016">
+                  <label class="check-label" for="2016">2016</label>
+                </li>
+                <li>
+                  <input id="2017" type="checkbox" class="checkbox" name="2017">
+                  <label class="check-label" for="2017">2017</label>
+                </li>
+              </ul>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Filter" name="submit" />
+            <input class="btn btn-default" type="button" value="Clear" name="clear" id="clear" />
+          </fieldset>
+          <img id="toggle-arrow" class="up-arrow" src="../up-arrow.png">
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container-fluid wrapper">
+    <section class="container work-samples" id="main-cards">
+      <div class="row" id="js-render-images">
+        <!-- Images render here -->
+      </div>
+    </section>
+  </div>
+  
+  <footer class="contact">
+    <h2>Let's Get In Touch</h2>
+    <p>
+      I'm always interested in building relationships with people in the art industry. 
+      <br />
+      Feel free to get in touch whenever! 
+      <br />
+      <a class="email" href="mailto:aaronmcavinue@gmail.com">aaronmcavinue@gmail.com</a>
+    </p>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../js/jquery.unveil.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69489495-1', 'auto');
+  ga('send', 'pageview');
+  setTimeout("ga('send','event','Adjusted Bounce','More than 2 seconds on page.')",2000);
+</script>
+<script src="../js/art.js"></script>
+</body>
+</html>

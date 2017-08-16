@@ -1,0 +1,145 @@
+#art-header {
+  background-color: rgba(21, 21, 21, 0.8);
+  color: $color-3;
+  
+  .social a {
+    color: $color-3;
+    
+    &:hover {
+      color: #923232;
+    }
+  }
+}
+
+#art-body {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: $font-2;
+  line-height: 1.5em;
+  color: $color-22;
+  background: #fafafb;
+  overflow-x: hidden;
+}
+
+#art-intro {
+  background-color: #dedede;
+  color: $color-0;
+  
+  legend {
+    color: $color-3;
+    border-bottom: none;
+  }
+  
+  #filter-form {
+      margin-bottom: 1em;
+      padding: 0 0.5em;
+      
+      fieldset {
+        margin-bottom: 1em;
+        
+        .form-group {
+          margin-bottom: 1em;
+          
+          input {
+            color: $color-22;
+            border: none;
+            padding: 0.25em 0.5em;
+            margin-left: 0.5em;
+            @include round-corners;
+          }
+        }  
+      }
+      
+      #toggle-arrow {
+              width: 3em;
+              height: 3em;
+              display: block;
+              margin: 0 auto;
+              opacity: 0.5;
+              cursor: pointer;
+          
+          &:hover {
+              opacity: 1;
+          }
+      }
+  }
+  
+  .tag-list-container {
+      width:100%;
+      max-height:10em;
+      overflow: auto;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      background-color: $color-3;
+      max-width: 75%;
+      margin: 0 auto 1em auto;
+      @include round-corners;
+      
+      li {
+          display: inline;
+          list-style-type: none;
+          padding-right: 1em;
+          color: $color-22;
+          
+          .checkbox {
+              display: inline;
+              visibility: hidden;
+              width: 0;
+          }
+          
+          .check-label {
+              padding: 0.25em 1em;
+              border-radius: 0.5em;
+              font-weight: 500;
+              cursor: pointer;
+          }
+          
+          .checkbox:checked + .check-label {
+              background-color: #ccc;
+              color: #444;
+          }
+      }
+  }
+}
+
+#main-cards h4 {
+  margin-bottom: 0;
+}
+
+.image-card {
+  margin-top: 1em;
+  text-align: left;
+  
+  .card-container {
+    .img-container {
+      text-align: center;
+      
+      .img-helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      
+      img {
+        max-width: 100%;
+        max-height: 100vh;
+        vertical-align: middle;
+        }
+    }
+      
+    a {
+      margin-right: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+   .image-card {
+     text-align: center;
+   }
+   
+   #art-intro .tag-list-container {
+     max-width: 100%;
+   }
+}

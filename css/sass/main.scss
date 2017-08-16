@@ -1,0 +1,92 @@
+$font-1: 'Questrial', sans-serif;
+$font-2: 'Lato', sans-serif;
+
+/* Accent colors */
+$color-8: #ab3939; // Red
+$color-24: #f15b5b; // Light red
+$color-6: #0a82a7; // Teal-blue
+$color-9: #19abd8; // Light teal
+$color-23: #9dffeb;
+$color-5: #81acff; // Blue
+$color-25: #bd375d; // magenta
+$color-26: #e4567d; // light magenta
+
+/* Greyscale */
+$color-0: #130101; // Dark-black
+$color-22: rgb(56, 56, 56);
+$color-10: rgba(39, 39, 39, 0.8);
+$color-20: rgba(51, 45, 45, 0.75);
+$color-12: rgba(51, 45, 45, 0.5);
+$color-13: rgb(206, 212, 216);
+$color-7: #f1f5f7;
+$color-3: #fff;    // White
+
+@mixin round-corners {
+  /* Rounded corners */
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em; /* future proofing */
+  -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
+}
+
+@mixin button-general {
+  /* Rounded corners */
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em; /* future proofing */
+  -khtml-border-radius: 1em; /* for old Konqueror browsers */
+  
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: $font-2;
+  line-height: 1.5em;
+  color: $color-22;
+  background-color: #74a5c8;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  
+  background: -webkit-linear-gradient(left, #4c6a98 0%, #b2deff 44%, #4c6a98 100%);
+  background: -o-linear-gradient(left, #4c6a98 0%, #b2deff 44%, #4c6a98 100%);
+  background: -ms-linear-gradient(left, #4c6a98 0%, #b2deff 44%, #4c6a98 100%);
+  background: -moz-linear-gradient(left, #4c6a98 0%, #b2deff 44%, #4c6a98 100%);
+  background: linear-gradient(left, #4c6a98 0%, #b2deff 44%, #4c6a98 100%);
+}
+
+strong {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+b {
+  font-weight: 500;
+}
+
+hr {
+  width: 20%;
+}
+
+.btn {
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em; /* future proofing */
+  -khtml-border-radius: 2em; /* for old Konqueror browsers */
+}
+
+@import "development";
+@import "art";
