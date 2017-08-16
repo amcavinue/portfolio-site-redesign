@@ -1,8 +1,7 @@
 {
-  "name": "ecommerce-wishlist-app",
+  "name": "portfolio-site-handlebars",
   "version": "0.0.1",
-  "description": "An ecommerce wishlist app",
-  "main": "server.js",
+  "description": "My portfolio integrated with handlebars",
   "scripts": {
     "clean:css": "rimraf css/main.css",
     "build:css": "run-s clean:css _build:css",
