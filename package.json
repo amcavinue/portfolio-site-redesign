@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "My portfolio integrated with handlebars",
   "scripts": {
-    "clean:css": "rimraf css/main.css && rimraf css/dependencies.css && rimraf css/styles.css && rimraf css/styles.min.css",
+    "build:all": "run-s build:css build:js",
+    "clean:css": "rimraf css/main.css css/dependencies.css css/styles.css css/styles.min.css",
     "build:css": "run-s clean:css _build:css",
     "_build:css": "node-sass css/sass/main.scss css/main.css && npm run concat:css-dependencies && npm run concat:css-all && npm run minify:css",
     "watch:css": "run-s build:css _watch:css",
@@ -12,7 +13,12 @@
     "_watch:css-dependencies": "chokidar css/dependencies/**/* -c \"npm run build:css\"",
     "concat:css-dependencies": "cat css/dependencies/* > css/dependencies.css",
     "concat:css-all": "cat css/dependencies.css css/main.css > css/styles.css",
-    "minify:css": "minify --output css/styles.min.css css/styles.css"
+    "minify:css": "minify --output css/styles.min.css css/styles.css",
+    "clean:js": "rimraf js/scripts.min.js js/scripts.js",
+    "build:js": "run-s clean:js _build:js",
+    "_build:js": "run-s concat:js-all minify:js-all",
+    "concat:js-all": "cat js/dependencies/jquery-3.1.1.min.js js/dependencies/* js/templates/* > js/scripts.js",
+    "minify:js-all": "minify --outpus js/scripts.min.js js/scripts.js"
   },
   "author": "Aaron McAvinue",
   "license": "UNLICENSED",
