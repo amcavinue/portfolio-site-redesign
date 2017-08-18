@@ -693,8 +693,8 @@ header {
 
 #intro {
   background: rgba(39, 39, 39, 0.8);
-  background-image: url("/content/new-code-4.jpg");
-  background-position: left center;
+  background-image: url("/content/computer-3.jpg");
+  background-position: right bottom;
   background-size: cover;
   text-align: left;
   padding: 0 0.5em;
@@ -720,7 +720,8 @@ header {
     padding: 5em 0; }
     #intro .what-i-do #blurb {
       text-align: left;
-      font-size: 0.8em; }
+      font-size: 0.8em;
+      font-weight: 500; }
     #intro .what-i-do .btn-cta {
       /* Rounded corners */
       -moz-border-radius: 1em;

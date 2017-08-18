@@ -78,8 +78,8 @@ header {
 
 #intro {
   background: $color-10;
-  background-image: url('/content/new-code-4.jpg');
-  background-position: left center;
+  background-image: url('/content/computer-3.jpg');
+  background-position: right bottom;
   background-size: cover;
   text-align: left;
   padding: 0 0.5em;
@@ -116,6 +116,7 @@ header {
     #blurb {
       text-align: left;
       font-size: 0.8em;
+      font-weight: 500;
     }
     
     .btn-cta {
