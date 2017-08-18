@@ -35,13 +35,11 @@ $(function() {
     	// prevent jump-down
     	return false;
     });
+    
+    carouselHeightMatch();
+  	$(window).on('resize', function() {
+  	    $('.item').removeAttr("style");
+  	    carouselHeightMatch();
+  	});
   });
-});
-
-$(window).on("load", function() {
-  carouselHeightMatch();
-	$(window).on('resize', function() {
-	    $('.item').removeAttr("style");
-	    carouselHeightMatch();
-	});
 });
