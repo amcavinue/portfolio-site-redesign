@@ -35,16 +35,5 @@ $(function() {
     	// prevent jump-down
     	return false;
     });
-    
-    carouselHeightMatch();
-  });
-});
-
-$(window).on('load', function() {
-  $(document).ajaxStop(function () {
-    carouselHeightMatch();
-  	$(window).on('resize', function() {
-  	    carouselHeightMatch();
-  	});
   });
 });
