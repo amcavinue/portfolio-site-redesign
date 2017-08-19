@@ -18,13 +18,15 @@ jQuery.fn.animateAuto = function(prop, speed, callback){
 
 function carouselHeightMatch() {
   var maxHeight = -1;
-   $('.item').each(function() {
-     maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-   });
+  $('.item').removeAttr("style");
+  
+  $('.item').each(function() {
+   maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+  });
 
-   $('.item').each(function() {
-     $(this).height(maxHeight);
-   });
+  $('.item').each(function() {
+   $(this).height(maxHeight);
+  });
    
-   console.log('matched');
+  console.log('matched');
 }

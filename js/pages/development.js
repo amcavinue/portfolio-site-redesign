@@ -37,9 +37,16 @@ $(function() {
     });
     
     carouselHeightMatch();
-  	$(window).on('resize', function() {
-  	    $('.item').removeAttr("style");
-  	    carouselHeightMatch();
-  	});
   });
 });
+
+$(window).on('load', function() {
+  
+});
+$(document).ajaxStop(function () {
+  carouselHeightMatch();
+	$(window).on('resize', function() {
+	    carouselHeightMatch();
+	});
+});
+  
