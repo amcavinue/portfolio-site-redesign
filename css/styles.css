@@ -1129,7 +1129,8 @@ header {
     text-align: center;
     position: relative;
     max-width: 760px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 0.5em; }
     #case-studies .intro .row {
       margin-top: 1em; }
     #case-studies .intro .btn {
@@ -1166,7 +1167,10 @@ header {
   #case-studies .study-section {
     text-align: left;
     margin: 0 auto 2em auto;
-    max-width: 760px; }
+    max-width: 760px;
+    padding: 0 0.5em; }
+    #case-studies .study-section li {
+      margin-left: 1em; }
   #case-studies .study-img {
     max-height: 500px;
     width: 100%;
