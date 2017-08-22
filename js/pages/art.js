@@ -56,6 +56,10 @@ $(function() {
         title: 'Digital Artist',
         otherSite: '/index.html',
         otherSiteText: 'Also see my code >'
+      },
+      contact: {
+        portrait: false,
+        blurb: 'I\'m always interested in building relationships with people in the art industry. Feel free to get in touch whenever!'
       }
     };
     document.body.innerHTML = template(data);
