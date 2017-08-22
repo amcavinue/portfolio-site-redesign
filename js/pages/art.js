@@ -53,6 +53,7 @@ $(function() {
     var template = Handlebars.compile(content.filter("#art-page").html());
     var data = {
       header: {
+        id: 'art-header',
         title: 'Digital Artist',
         otherSite: '/index.html',
         otherSiteText: 'Also see my code >'

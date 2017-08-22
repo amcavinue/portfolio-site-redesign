@@ -4934,7 +4934,9 @@ function loadPartials(done) {
       services: content.filter('#services').html(),
       testimonials: content.filter('#testimonials').html(),
       workSamples: content.filter('#work-samples').html(),
-      contact: content.filter('#contact').html()
+      contact: content.filter('#contact').html(),
+      introArt: content.filter('#introArt').html(),
+      gallery: content.filter('#gallery').html()
     });
     
     done(content);

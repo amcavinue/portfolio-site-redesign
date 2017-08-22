@@ -8,6 +8,7 @@ $(function() {
     var template = Handlebars.compile(content.filter("#development-page").html());
     var data = {
       header: {
+        id: '',
         title: 'Full-Stack Software Developer',
         otherSite: '/art',
         otherSiteText: 'Also see my artwork >'

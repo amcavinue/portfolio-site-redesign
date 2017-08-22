@@ -1,5 +1,5 @@
 <script id="header" type="text/x-handlebars-template">
-  <header>
+  <header id="{{header.id}}">
     <div class="name">
       <h1>Aaron McAvinue</h1>
       <h4>{{header.title}}</h4>
@@ -256,6 +256,63 @@
   </footer>
 </script>
 
+<script id="introArt" type="text/x-handlebars-template">
+  <section id="art-intro">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <form id="filter-form" action="" method="">
+          <legend><h2>Filters</h2></legend>
+          <fieldset id="filters-fieldset">
+            <div class="form-group">
+              <label for="name">Image Contains</label>
+              <input type="text" id="contains" name="contains">
+            </div>
+            
+            <label for="tag-list">Years</label>
+            <div class="tag-list-container">
+              <ul class="tag-list" id="tag-list">
+                <li>
+                  <input id="2012" type="checkbox" class="checkbox" name="2012">
+                  <label class="check-label" for="2012">2012 & Prior</label>
+                </li>
+                <li>
+                  <input id="2013" type="checkbox" class="checkbox" name="2013">
+                  <label class="check-label" for="2013">2013</label>
+                </li>
+                <li>
+                  <input id="2015" type="checkbox" class="checkbox" name="2015">
+                  <label class="check-label" for="2015">2015</label>
+                </li>
+                <li>
+                  <input id="2016" type="checkbox" class="checkbox" name="2016">
+                  <label class="check-label" for="2016">2016</label>
+                </li>
+                <li>
+                  <input id="2017" type="checkbox" class="checkbox" name="2017">
+                  <label class="check-label" for="2017">2017</label>
+                </li>
+              </ul>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Filter" name="submit" />
+            <input class="btn btn-default" type="button" value="Clear" name="clear" id="clear" />
+          </fieldset>
+          <img id="toggle-arrow" class="up-arrow" src="../content/up-arrow.png">
+        </form>
+      </div>
+    </div>
+  </section>
+</script>
+
+<script id="gallery" type="text/x-handlebars-template">
+  <div class="container-fluid wrapper">
+    <section class="container work-samples" id="main-cards">
+      <div class="row" id="js-render-images">
+        <!-- Images render here -->
+      </div>
+    </section>
+  </div>
+</script>
+
 <!--<script id="services" type="text/x-handlebars-template">
 </script>-->
 
@@ -270,5 +327,7 @@
 
 <script id="art-page" type="text/x-handlebars-template">
   {{> header}}
+  {{> introArt}}
+  {{> gallery}}
   {{> contact}}
 </script>
