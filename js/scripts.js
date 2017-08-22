@@ -4917,7 +4917,7 @@ this},r._applyDataApi=function(){var e={};t("[data-match-height], [data-mh]").ea
 
 })(window.jQuery || window.Zepto);
 function loadPartials(done) {
-  $.get("partials.html").done(function(response) {
+  $.get(window.location.protocol + '//' + window.location.hostname + '/partials.html').done(function(response) {
     var content = $($.parseHTML(response));
 
     //You need to register each partial

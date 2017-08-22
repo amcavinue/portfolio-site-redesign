@@ -46,66 +46,80 @@ function findKeywords(keywords, imageData) {
 
 $(function() {
   var imageData;
-
-  // Load the images.
-  $.getJSON("../content/art-data.json", function(json) {
-    imageData = json;
-    $('#js-render-images').append(renderImages(json));
-    $("img").unveil();
-  });
-
-  // Toggle the filters form.
-  $('#toggle-arrow').on('click', function() {
-    if (!$(this).hasClass('up-arrow')) {
-      $(this).attr('src', '../content/up-arrow.png');
-      $(this).addClass('up-arrow');
-    } else {
-      $(this).attr('src', '../content/down-arrow.png');
-      $(this).removeClass('up-arrow')
-    }
-
-    $('#filters-fieldset').slideToggle(400);
-  });
-
-  // Watch the filter form button.
-  $('#filter-form').submit(function(e) {
-    e.preventDefault();
-
-    var inputs = $(this).serializeArray(); // Get the inputs from the UI.
-    var keywords = [];
-    
-    // Sanitize the inputs.
-    inputs.forEach(function(input, i) {
-      if (input.name === "contains") {
-        input = input.value;
-      } else {
-        input = input.name;
+  
+  // Load the Handlebars template. 
+  loadPartials(function(content) {
+    //Compile main template
+    var template = Handlebars.compile(content.filter("#art-page").html());
+    var data = {
+      header: {
+        title: 'Digital Artist',
+        otherSite: '/index.html',
+        otherSiteText: 'Also see my code >'
       }
-      input = input.trim().toLowerCase().split(/[^a-zA-Z0-9']+/ig).filter(function(el, i, self) { return (el.length !== 0) && (i === self.indexOf(el)); }); // Sanitize contains.
-      keywords = keywords.concat(input);
+    };
+    document.body.innerHTML = template(data);
+    
+    // Load the images.
+    $.getJSON("../content/art-data.json", function(json) {
+      imageData = json;
+      $('#js-render-images').append(renderImages(json));
+      $("img").unveil();
+    });
+  
+    // Toggle the filters form.
+    $('#toggle-arrow').on('click', function() {
+      if (!$(this).hasClass('up-arrow')) {
+        $(this).attr('src', '../content/up-arrow.png');
+        $(this).addClass('up-arrow');
+      } else {
+        $(this).attr('src', '../content/down-arrow.png');
+        $(this).removeClass('up-arrow')
+      }
+  
+      $('#filters-fieldset').slideToggle(400);
+    });
+  
+    // Watch the filter form button.
+    $('#filter-form').submit(function(e) {
+      e.preventDefault();
+  
+      var inputs = $(this).serializeArray(); // Get the inputs from the UI.
+      var keywords = [];
+      
+      // Sanitize the inputs.
+      inputs.forEach(function(input, i) {
+        if (input.name === "contains") {
+          input = input.value;
+        } else {
+          input = input.name;
+        }
+        input = input.trim().toLowerCase().split(/[^a-zA-Z0-9']+/ig).filter(function(el, i, self) { return (el.length !== 0) && (i === self.indexOf(el)); }); // Sanitize contains.
+        keywords = keywords.concat(input);
+      });
+      
+      // Remove any duplicates.
+      keywords = keywords.filter(function(input, i, arr) {
+        return arr.indexOf(input) == i;
+      });
+  
+      var results = findKeywords(keywords, imageData);
+  
+      if (results.length !== 0) {
+        $('#js-render-images').empty().append(renderImages(results));
+        $("img").unveil();
+      } else {
+        $('#js-render-images').empty().append(renderImages(imageData));
+        $("img").unveil();
+      }
     });
     
-    // Remove any duplicates.
-    keywords = keywords.filter(function(input, i, arr) {
-      return arr.indexOf(input) == i;
-    });
-
-    var results = findKeywords(keywords, imageData);
-
-    if (results.length !== 0) {
-      $('#js-render-images').empty().append(renderImages(results));
-      $("img").unveil();
-    } else {
+    // Watch the clear button.
+    $('#clear').click(function(e) {
+      $('.tag-list :checked').prop('checked', false);
+      $('#contains').val('');
       $('#js-render-images').empty().append(renderImages(imageData));
       $("img").unveil();
-    }
-  });
-  
-  // Watch the clear button.
-  $('#clear').click(function(e) {
-    $('.tag-list :checked').prop('checked', false);
-    $('#contains').val('');
-    $('#js-render-images').empty().append(renderImages(imageData));
-    $("img").unveil();
+    });
   });
 });

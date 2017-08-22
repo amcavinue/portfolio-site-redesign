@@ -2,7 +2,7 @@
   <header>
     <div class="name">
       <h1>Aaron McAvinue</h1>
-      <h4>Full-Stack Software Developer</h4>
+      <h4>{{header.title}}</h4>
     </div>
     
     <div class="social">
@@ -13,7 +13,7 @@
       <a href="https://www.github.com/amcavinue" target="_blank" class="socicon-github"></a>
     </div>
     
-    <a class="other-site" href="/art">Also see my artwork ></a>
+    <a class="other-site" href="{{header.otherSite}}">{{header.otherSiteText}}</a>
   </header>
 </script>
 
@@ -264,4 +264,8 @@
   {{> testimonials}}
   {{> workSamples}}
   {{> contact}}
+</script>
+
+<script id="art-page" type="text/x-handlebars-template">
+  {{> header}}
 </script>
