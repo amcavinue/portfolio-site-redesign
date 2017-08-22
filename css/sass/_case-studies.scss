@@ -19,4 +19,69 @@
     position: relative;
     min-height: 500px;
   }
+  
+  hr {
+    margin: 1em auto;
+    border-color: $color-0;
+  }
+  
+  .intro {
+    text-align: center;
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+    
+    .row {
+      margin-top: 1em;
+    }
+    
+    .btn {
+      @include button-general
+      
+      border: none;
+      font-size: 1.05em;
+      font-weight: 300;
+      text-align: center;
+    }
+    
+    .btn-github {
+      background-color: transparent;
+      margin-bottom: 0.5em;
+      margin-right: 1em;
+      border: $color-6 solid 1px;
+      color: $color-6;
+      
+      &:hover {
+        background-color: $color-6;
+        color: $color-3;
+      }
+    }
+    
+    .btn-site {
+      background-color: transparent;
+      border: $color-0 solid 1px;
+      margin-bottom: 0.5em;
+      color: $color-0;
+      
+      &:hover {
+        background-color: $color-0;
+        color: $color-3;
+      }
+    }
+  }
+  
+  .study-section {
+    text-align: left;
+    margin: 0 auto 2em auto;
+    max-width: 760px;
+  }
+  
+  .study-img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-top: 1px $color-12 solid;
+    border-bottom: 1px $color-12 solid;
+    margin: 1em 0;
+  }
 }
