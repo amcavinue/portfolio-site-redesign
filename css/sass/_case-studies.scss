@@ -7,4 +7,16 @@
   color: $color-22;
   background: #fafafb;
   overflow-x: hidden;
+  
+  .banner {
+    background: rgba(39,39,39,0.8);
+    background-image: url(/content/case-studies/ecommerce-wishlist/ecommerce-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: left;
+    padding: 0 0.5em;
+    color: #fff;
+    position: relative;
+    min-height: 500px;
+  }
 }

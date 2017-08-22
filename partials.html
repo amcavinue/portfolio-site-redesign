@@ -246,7 +246,7 @@
   <footer class="contact">
     <h2>Let's Work Together</h2>
     {{#if contact.portrait}}
-      <img src="content/my-portrait-mountains-2.jpg" alt="Aaron's Portrait" id="portrait"/>
+      <img src="/content/my-portrait-mountains-2.jpg" alt="Aaron's Portrait" id="portrait"/>
     {{/if}}
     <p>
         Shoot me an email at: <a class="email" href="mailto:aaronmcavinue@gmail.com">aaronmcavinue@gmail.com</a>
@@ -329,5 +329,10 @@
   {{> header}}
   {{> introArt}}
   {{> gallery}}
+  {{> contact}}
+</script>
+
+<script id="ecommerce-wishlist" type="text/x-handlebars-template">
+  {{> header}}
   {{> contact}}
 </script>

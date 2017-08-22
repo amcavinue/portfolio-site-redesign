@@ -735,12 +735,12 @@ header {
       color: #fff;
       margin: 1em 0;
       font-size: 0.75em;
-      background-color: #bd375d;
+      background-color: #d0305e;
       outline: none; }
       #intro .what-i-do .btn-cta:active {
         transform: scale(0.95); }
       #intro .what-i-do .btn-cta:hover {
-        background-color: #e4567d; }
+        background-color: #e4416e; }
 
 #services {
   padding: 0.5em 1em;
@@ -1112,3 +1112,13 @@ header {
   color: #383838;
   background: #fafafb;
   overflow-x: hidden; }
+  #case-studies .banner {
+    background: rgba(39, 39, 39, 0.8);
+    background-image: url(/content/case-studies/ecommerce-wishlist/ecommerce-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: left;
+    padding: 0 0.5em;
+    color: #fff;
+    position: relative;
+    min-height: 500px; }
