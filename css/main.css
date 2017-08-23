@@ -514,6 +514,9 @@ header {
   #art-intro .tag-list-container {
     max-width: 100%; } }
 
+#case-studies-main {
+  background: #f1f5f7; }
+
 #case-studies {
   text-align: center;
   font-size: 18px;
