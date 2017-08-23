@@ -328,8 +328,35 @@
 </script>
 
 <script id="caseStudyBody" type="text/x-handlebars-template">
+{{#each caseStudyBody}}
+  {{#ifEquals this.type "img"}}
+    <img src="{{this.content}}" alt="study image" class="study-img">
+  {{/ifEquals}}
+  
+  {{#ifEquals this.type "p"}}
+    <section class="study-section">
+      <h2>{{this.title}}</h2>
+      <p>{{this.content}}</p>
+    </section>
+  {{/ifEquals}}
+  
+  {{#ifEquals this.type "ul"}}
+    <section class="study-section">
+      <h2>{{this.title}}</h2>
+      <ul>
+        {{#each this.list}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </section>
+  {{/ifEquals}}
+{{/each}}
+
 </script>
 
+<script id="caseStudyBanner" type="text/x-handlebars-template">
+  <section class="banner" style="background-image: url({{caseStudyBanner}})"></section>
+</script>
 
 <!--<script id="services" type="text/x-handlebars-template">
 </script>-->
@@ -352,6 +379,7 @@
 
 <script id="ecommerce-wishlist" type="text/x-handlebars-template">
   {{> header}}
+  {{> caseStudyBanner}}
   {{> introCaseStudy}}
   {{> caseStudyBody}}
   {{> contact}}

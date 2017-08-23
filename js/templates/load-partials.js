@@ -13,7 +13,8 @@ function loadPartials(done) {
       introArt: content.filter('#introArt').html(),
       gallery: content.filter('#gallery').html(),
       introCaseStudy: content.filter('#introCaseStudy').html(),
-      caseStudyBody: content.filter('#caseStudyBody').html()
+      caseStudyBody: content.filter('#caseStudyBody').html(),
+      caseStudyBanner: content.filter('#caseStudyBanner').html()
     });
     
     done(content);
