@@ -240,7 +240,9 @@
           </div>
       </div>
       
-      <p class="show-more"><a href="#" class="button">Show More</a></p>
+      {{#if caseStudies.showMore}}
+        <p class="show-more"><a href="#" class="button">Show More</a></p>
+      {{/if}}
     </section>
   </div>
 </script>
@@ -359,6 +361,10 @@
   <section class="banner" style="background-image: url({{caseStudyBanner}})"></section>
 </script>
 
+<script id="caseStudyMore" type="text/x-handlebars-template">
+  <a href="/case-studies" class="btn btn-primary btn-see-more">See More Case Studies ></a>
+</script>
+
 <!--<script id="services" type="text/x-handlebars-template">
 </script>-->
 
@@ -383,5 +389,12 @@
   {{> caseStudyBanner}}
   {{> introCaseStudy}}
   {{> caseStudyBody}}
+  {{> caseStudyMore}}
+  {{> contact}}
+</script>
+
+<script id="case-studies" type="text/x-handlebars-template">
+  {{> header}}
+  {{> workSamples}}
   {{> contact}}
 </script>
