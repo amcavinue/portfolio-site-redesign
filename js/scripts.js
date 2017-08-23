@@ -4936,7 +4936,9 @@ function loadPartials(done) {
       workSamples: content.filter('#work-samples').html(),
       contact: content.filter('#contact').html(),
       introArt: content.filter('#introArt').html(),
-      gallery: content.filter('#gallery').html()
+      gallery: content.filter('#gallery').html(),
+      introCaseStudy: content.filter('#introCaseStudy').html(),
+      caseStudyBody: content.filter('#caseStudyBody').html()
     });
     
     done(content);
