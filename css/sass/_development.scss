@@ -28,6 +28,14 @@ header {
   .name {
     display: inline;
     
+    .name-link {
+      color: inherit;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    
     h1 {
       margin: 0 0.25em 0.25em 0;
       font-weight: 300;

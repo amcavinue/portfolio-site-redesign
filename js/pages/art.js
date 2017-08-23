@@ -55,6 +55,7 @@ $(function() {
       header: {
         id: 'art-header',
         title: 'Digital Artist',
+        link: '/art',
         otherSite: '/index.html',
         otherSiteText: 'Also see my code >'
       },

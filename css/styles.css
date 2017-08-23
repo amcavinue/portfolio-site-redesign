@@ -658,6 +658,10 @@ header {
   text-align: left; }
   header .name {
     display: inline; }
+    header .name .name-link {
+      color: inherit; }
+      header .name .name-link:hover {
+        text-decoration: none; }
     header .name h1 {
       margin: 0 0.25em 0.25em 0;
       font-weight: 300;

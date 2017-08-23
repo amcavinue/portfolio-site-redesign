@@ -10,6 +10,7 @@ $(function() {
       header: {
         id: '',
         title: 'Full-Stack Software Developer',
+        link: '/',
         otherSite: '/art',
         otherSiteText: 'Also see my artwork >'
       },
