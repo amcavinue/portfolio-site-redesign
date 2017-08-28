@@ -945,7 +945,7 @@ header {
     border-radius: 50%;
     width: 160px; }
   .contact .email {
-    color: #81acff;
+    color: #e4416e;
     font-size: 1.2em;
     font-weight: bold; }
 
@@ -1106,9 +1106,6 @@ header {
     text-align: center; }
   #art-intro .tag-list-container {
     max-width: 100%; } }
-
-#case-studies-main {
-  background: #f1f5f7; }
 
 #case-studies {
   text-align: center;
