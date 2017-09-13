@@ -323,8 +323,12 @@
     <h1>{{caseStudyIntroTitle}}</h1>
     <span>{{caseStudyIntroBlurb}}</span>
     <div class="row">
-      <a target="_blank" class="btn btn-primary btn-github col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2" href="https://github.com/amcavinue/ecommerce-wishlist"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
-      <a target="_blank" class="btn btn-primary btn-site col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0" href="https://powerful-island-41601.herokuapp.com/#/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+    {{#if caseStudySource}}
+      <a target="_blank" class="btn btn-primary btn-github col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" href="{{caseStudySource}}"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
+    {{/if}}
+    {{#if caseStudySite}}
+      <a target="_blank" class="btn btn-primary btn-site col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" href="{{caseStudySite}}"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+    {{/if}}
     </div>
     <hr />
   </section>
@@ -384,6 +388,12 @@
   {{> contact}}
 </script>
 
+<script id="case-studies" type="text/x-handlebars-template">
+  {{> header}}
+  {{> workSamples}}
+  {{> contact}}
+</script>
+
 <script id="ecommerce-wishlist" type="text/x-handlebars-template">
   {{> header}}
   {{> caseStudyBanner}}
@@ -393,8 +403,11 @@
   {{> contact}}
 </script>
 
-<script id="case-studies" type="text/x-handlebars-template">
+<script id="weather-app" type="text/x-handlebars-template">
   {{> header}}
-  {{> workSamples}}
+  {{> caseStudyBanner}}
+  {{> introCaseStudy}}
+  {{> caseStudyBody}}
+  {{> caseStudyMore}}
   {{> contact}}
 </script>

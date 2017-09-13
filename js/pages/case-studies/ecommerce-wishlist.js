@@ -14,6 +14,8 @@ $(function() {
       caseStudyBanner: '/content/case-studies/ecommerce-wishlist/ecommerce-banner.jpg',
       caseStudyIntroTitle: 'Ecommerce Wishlist',
       caseStudyIntroBlurb: 'A well-engineered app that lets you create a custom wishlist from your favorite products.',
+      caseStudySource: 'https://github.com/amcavinue/ecommerce-wishlist',
+      caseStudySite: 'https://github.com/amcavinue/ecommerce-wishlist',
       caseStudyBody: [
         {
           type: 'p',
