@@ -12,6 +12,7 @@ $(function() {
         otherSiteText: 'Also see my artwork >'
       },
       caseStudyBanner: '/content/case-studies/ecommerce-wishlist/ecommerce-banner.jpg',
+      caseStudyBannerAlign: 'center',
       caseStudyIntroTitle: 'Ecommerce Wishlist',
       caseStudyIntroBlurb: 'A well-engineered app that lets you create a custom wishlist from your favorite products.',
       caseStudySource: 'https://github.com/amcavinue/ecommerce-wishlist',

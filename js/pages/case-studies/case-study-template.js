@@ -12,6 +12,7 @@ $(function() {
         otherSiteText: 'Also see my artwork >'
       },
       caseStudyBanner: '',
+      caseStudyBannerAlign: '',
       caseStudyIntroTitle: '',
       caseStudyIntroBlurb: '',
       caseStudySource: '',
