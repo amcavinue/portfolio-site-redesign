@@ -604,16 +604,16 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
   color: #383838;
-  background-color: #74a5c8;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   overflow-x: hidden;
-  background: -webkit-linear-gradient(left, #6b90ca 0%, #bee1fb 20%, #bee1fb 80%, #6b90ca 100%);
-  background: -o-linear-gradient(left, #6b90ca 0%, #bee1fb 20%, #bee1fb 80%, #6b90ca 100%);
-  background: -ms-linear-gradient(left, #6b90ca 0%, #bee1fb 20%, #bee1fb 80%, #6b90ca 100%);
-  background: -moz-linear-gradient(left, #6b90ca 0%, #bee1fb 20%, #bee1fb 80%, #6b90ca 100%);
-  background: linear-gradient(left, #6b90ca 0%, #bee1fb 20%, #bee1fb 80%, #6b90ca 100%); }
+  /*background: -webkit-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
+  background: -o-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
+  background: -ms-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
+  background: -moz-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
+  background: linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);*/
+  background-color: #b3d8f5; }
 
 strong {
   color: #fff;

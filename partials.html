@@ -181,7 +181,7 @@
               <h3>Ecommerce Wishlist</h3>
               <p>A well-engineered app that lets you create a custom wishlist from your favorite products.</p>
               <hr />
-              <a class="btn btn-primary btn-github" href="/case-studies/ecommerce-wishlist.html">See the Case Study</a>
+              <a class="btn btn-primary btn-github" href="/case-studies/ecommerce-wishlist.html">See the Case Study ></a>
           </div>
       </div>
       
@@ -191,7 +191,7 @@
               <h3>Weather App</h3>
               <p>An app for everyone that displays your local weather, built in a maintainable and scalable way.</p>
               <hr />
-              <a class="btn btn-primary btn-github" href="/case-studies/weather-app.html">See the Case Study</a>
+              <a class="btn btn-primary btn-github" href="/case-studies/weather-app.html">See the Case Study ></a>
           </div>
       </div>
       
@@ -201,8 +201,7 @@
               <h3>Image Organizer</h3>
               <p>An app that stores images, built with a tag system for mining unrelated images for creative inspiration.</p>
               <hr />
-              <a target="_blank" class="btn btn-primary btn-github" href="https://github.com/amcavinue/image-organizer"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
-              <a target="_blank" class="btn btn-primary btn-site" href="https://still-temple-63836.herokuapp.com/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+              <a class="btn btn-primary btn-github" href="/case-studies/image-organizer.html">See the Case Study ></a>
           </div>
       </div>
       
@@ -336,7 +335,7 @@
 <script id="caseStudyBody" type="text/x-handlebars-template">
 {{#each caseStudyBody}}
   {{#ifEquals this.type "img"}}
-    <img src="{{this.content}}" alt="study image" class="study-img">
+    <img src="{{this.content}}" alt="study image" class="study-img" style="max-width: {{this.maxWidth}};">
   {{/ifEquals}}
   
   {{#ifEquals this.type "p"}}
@@ -403,6 +402,15 @@
 </script>
 
 <script id="weather-app" type="text/x-handlebars-template">
+  {{> header}}
+  {{> caseStudyBanner}}
+  {{> introCaseStudy}}
+  {{> caseStudyBody}}
+  {{> caseStudyMore}}
+  {{> contact}}
+</script>
+
+<script id="image-organizer" type="text/x-handlebars-template">
   {{> header}}
   {{> caseStudyBanner}}
   {{> introCaseStudy}}
