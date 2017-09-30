@@ -20,7 +20,7 @@ body {
   background: -ms-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
   background: -moz-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
   background: linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);*/
-  background-color: #b3d8f5; }
+  background-color: #f1f5f7; }
 
 strong {
   color: #fff;
@@ -49,7 +49,8 @@ hr {
   padding: 1em 0; }
 
 .wrapper {
-  padding: 0 0.5em; }
+  padding: 0 0.5em;
+  background-color: #80acda; }
 
 h1, h2 {
   font-family: "Questrial", sans-serif; }
@@ -145,10 +146,10 @@ header {
       /* for old Konqueror browsers */
       border: none;
       font-weight: 500;
-      color: #fff;
+      color: #130101;
       margin: 1em 0;
       font-size: 0.75em;
-      background-color: #d0305e;
+      background-color: #ef366b;
       outline: none; }
       #intro .what-i-do .btn-cta:active {
         transform: scale(0.95); }
@@ -271,7 +272,7 @@ header {
       border-radius: 2em;
       -khtml-border-radius: 2em;
       color: #383838;
-      background-color: #9dffeb;
+      background-color: #a2c1ff;
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
@@ -330,10 +331,10 @@ header {
     .work-samples .project .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: #9dffeb solid 1px;
-      color: #9dffeb; }
+      border: #a2c1ff solid 1px;
+      color: #a2c1ff; }
       .work-samples .project .btn-github:hover {
-        background-color: #9dffeb;
+        background-color: #a2c1ff;
         color: #383838; }
     .work-samples .project .btn-site {
       background-color: transparent;
@@ -354,7 +355,7 @@ header {
     border-radius: 50%;
     width: 160px; }
   .contact .email {
-    color: #ff4276;
+    color: #ef366b;
     font-size: 1.2em;
     font-weight: bold; }
 

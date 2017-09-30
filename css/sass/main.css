@@ -1,0 +1,39 @@
+/*
+Error: Invalid CSS after "$color-25": expected selector or at-rule, was ": #d0305e; // m..."
+        on line 12 of /home/ubuntu/workspace/css/sass/main.scss
+
+7: $color-6: #0a82a7; // Teal-blue
+8: $color-9: #19abd8; // Light teal
+9: $color-23: #9dffeb;
+10: $color-5: #81acff; // Blue
+11: $color-27: #75a5d8
+12: $color-25: #d0305e; // magenta
+13: $color-26: #ff4276; // light magenta
+14: 
+15: /* Greyscale *\/
+16: $color-0: #130101; // Dark-black
+17: $color-22: rgb(56, 56, 56);
+
+Backtrace:
+/home/ubuntu/workspace/css/sass/main.scss:12
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:42:in `parse'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/mnt/shared/sbin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$color-25\": expected selector or at-rule, was \": #d0305e; // m...\"\A         on line 12 of /home/ubuntu/workspace/css/sass/main.scss\A \A 7: $color-6: #0a82a7; // Teal-blue\A 8: $color-9: #19abd8; // Light teal\A 9: $color-23: #9dffeb;\A 10: $color-5: #81acff; // Blue\A 11: $color-27: #75a5d8\A 12: $color-25: #d0305e; // magenta\A 13: $color-26: #ff4276; // light magenta\A 14: \A 15: /* Greyscale */\A 16: $color-0: #130101; // Dark-black\A 17: $color-22: rgb(56, 56, 56);"; }

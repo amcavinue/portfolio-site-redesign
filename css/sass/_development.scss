@@ -8,6 +8,7 @@
 
 .wrapper {
   padding: 0 0.5em;
+  background-color: $color-27;
 }
 
 h1, h2 {
@@ -134,7 +135,7 @@ header {
       
       border: none;
       font-weight: 500;
-      color: $color-3;
+      color: $color-0;
       margin: 1em 0;
       font-size: 0.75em;
       background-color: $color-25;
@@ -293,7 +294,7 @@ header {
       -khtml-border-radius: 2em;
       
       color: $color-22;
-      background-color: $color-23;
+      background-color: $color-30;
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
@@ -349,11 +350,11 @@ header {
     .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: $color-23 solid 1px;
-      color: $color-23;
+      border: $color-30 solid 1px;
+      color: $color-30;
       
       &:hover {
-        background-color: $color-23;
+        background-color: $color-30;
         color: $color-22;
       }
     }
@@ -387,7 +388,7 @@ header {
   }
   
   .email {
-    color: $color-26;
+    color: $color-25;
     font-size: 1.2em;
     font-weight: bold;
   }
