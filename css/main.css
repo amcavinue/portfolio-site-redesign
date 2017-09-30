@@ -146,7 +146,7 @@ header {
       /* for old Konqueror browsers */
       border: none;
       font-weight: 500;
-      color: #130101;
+      color: #fff;
       margin: 1em 0;
       font-size: 0.75em;
       background-color: #ef366b;
@@ -405,6 +405,9 @@ header {
     padding: 1em; }
     #intro .what-i-do {
       padding: 0; } }
+
+#art-wrapper {
+  background-color: #fff; }
 
 #art-header {
   background-color: rgba(21, 21, 21, 0.8);
