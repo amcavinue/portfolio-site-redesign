@@ -701,6 +701,7 @@ header {
   background-image: url("/content/computer-6.jpg");
   background-position: right bottom;
   background-size: cover;
+  background-attachment: fixed;
   text-align: left;
   padding: 0 0.5em;
   color: #fff;
