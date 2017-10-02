@@ -89,8 +89,11 @@ header {
   background: $color-10;
   background-image: url('/content/computer-6.jpg');
   background-position: right bottom;
-  background-size: cover;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: left;
   padding: 0 0.5em;
   color: $color-3;
@@ -101,6 +104,7 @@ header {
     color: $color-3;
     font-weight: 700;
     text-shadow: 2px 0 5px $color-20, 0 -2px 5px $color-20, 0 2px 5px $color-20, -2px 0 5px $color-20;
+    margin-bottom: 1.5em;
   }
   
   #enterprise-app {
@@ -229,6 +233,7 @@ header {
       position: static;
       padding: 0;
       text-shadow: none;
+      margin-bottom: 1.5em;
       
       .testimonial-text {
         margin-top: 0.5em;

@@ -107,8 +107,11 @@ header {
   background: rgba(39, 39, 39, 0.8);
   background-image: url("/content/computer-6.jpg");
   background-position: right bottom;
-  background-size: cover;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: left;
   padding: 0 0.5em;
   color: #fff;
@@ -117,7 +120,8 @@ header {
     text-align: center;
     color: #fff;
     font-weight: 700;
-    text-shadow: 2px 0 5px rgba(51, 45, 45, 0.75), 0 -2px 5px rgba(51, 45, 45, 0.75), 0 2px 5px rgba(51, 45, 45, 0.75), -2px 0 5px rgba(51, 45, 45, 0.75); }
+    text-shadow: 2px 0 5px rgba(51, 45, 45, 0.75), 0 -2px 5px rgba(51, 45, 45, 0.75), 0 2px 5px rgba(51, 45, 45, 0.75), -2px 0 5px rgba(51, 45, 45, 0.75);
+    margin-bottom: 1.5em; }
   #intro #enterprise-app {
     max-width: 100%; }
   #intro hr {
@@ -220,7 +224,8 @@ header {
       color: #130101;
       position: static;
       padding: 0;
-      text-shadow: none; }
+      text-shadow: none;
+      margin-bottom: 1.5em; }
       #testimonials #testimonials-carousel .carousel-caption .testimonial-text {
         margin-top: 0.5em; }
       #testimonials #testimonials-carousel .carousel-caption hr {
@@ -273,7 +278,7 @@ header {
       border-radius: 2em;
       -khtml-border-radius: 2em;
       color: #383838;
-      background-color: #a2c1ff;
+      background-color: #b9e1ff;
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
@@ -332,10 +337,10 @@ header {
     .work-samples .project .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: #a2c1ff solid 1px;
-      color: #a2c1ff; }
+      border: #b9e1ff solid 1px;
+      color: #b9e1ff; }
       .work-samples .project .btn-github:hover {
-        background-color: #a2c1ff;
+        background-color: #b9e1ff;
         color: #383838; }
     .work-samples .project .btn-site {
       background-color: transparent;
