@@ -9,7 +9,7 @@ $(function() {
     var data = {
       header: {
         id: '',
-        title: 'Full-Stack Software Developer',
+        title: 'Web Developer',
         link: '/',
         otherSite: '/art',
         otherSiteText: 'Also see my artwork >'
