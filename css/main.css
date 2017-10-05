@@ -46,7 +46,7 @@ hr {
   padding: 0; }
 
 .container {
-  padding: 1em 0; }
+  padding: 2em 0; }
 
 .wrapper {
   padding: 0 0.5em;
@@ -165,7 +165,7 @@ header {
         background-color: #ff4276; }
 
 #services {
-  padding: 0.5em 1em;
+  padding: 2em 1em;
   background-color: #ced4d8;
   color: #130101; }
   #services h2 {
@@ -215,7 +215,7 @@ header {
 
 #testimonials {
   background: #f1f5f7;
-  padding: 0.5em; }
+  padding: 2em 0.5em; }
   #testimonials .reference {
     margin: 0 auto;
     border-radius: 50%;
@@ -229,7 +229,7 @@ header {
       padding: 0;
       text-shadow: none;
       margin-bottom: 1.5em;
-      max-width: 95%;
+      max-width: 85%;
       margin: 0 auto; }
       #testimonials #testimonials-carousel .carousel-caption .testimonial-text {
         margin-top: 0.5em;
@@ -362,7 +362,7 @@ header {
 
 .contact {
   background-color: rgba(39, 39, 39, 0.8);
-  padding: 0.5em 0.5em 2em 0.5em;
+  padding: 2em 0.5em;
   color: #fff; }
   .contact h2 {
     color: #fff; }
