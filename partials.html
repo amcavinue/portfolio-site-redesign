@@ -110,7 +110,7 @@
 
 <script id="work-samples" type="text/x-handlebars-template">
   <div class="container-fluid wrapper">
-    <section class="container work-samples">
+    <section class="container work-samples" id="work-samples">
       <h2>Case Studies</h2>
       
       <!-- Project Template-->
@@ -189,7 +189,7 @@
 </script>
 
 <script id="contact" type="text/x-handlebars-template">
-  <footer class="contact">
+  <footer class="contact" id="footer-contact">
     <h2>Let's Work Together</h2>
     {{#if contact.portrait}}
       <img src="/content/my-portrait-mountains-2.jpg" alt="Aaron's Portrait" id="portrait"/>
@@ -310,6 +310,10 @@
   <a href="/case-studies" class="btn btn-primary btn-see-more">See More Case Studies ></a>
 </script>
 
+<script id="scrollNav" type="text/x-handlebars-template">
+  <nav role='navigation' id="scroll-navigation"></nav>
+</script>
+
 <!--<script id="services" type="text/x-handlebars-template">
 </script>-->
 
@@ -320,6 +324,7 @@
   {{> testimonials}}
   {{> workSamples}}
   {{> contact}}
+  {{> scrollNav}}
 </script>
 
 <script id="art-page" type="text/x-handlebars-template">

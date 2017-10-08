@@ -327,7 +327,6 @@ header {
       -khtml-border-radius: 0.2em;
       /* for old Konqueror browsers */ }
     .work-samples .project p {
-      text-align: left;
       max-width: 24em;
       margin: 0 auto; }
     .work-samples .project .btn {
@@ -419,7 +418,7 @@ header {
   h1 {
     font-size: 1.75em; }
   #intro {
-    padding: 1.5em 1em; }
+    padding: 2em 1em; }
     #intro .what-i-do {
       padding: 0; } }
 

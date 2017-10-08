@@ -46,5 +46,31 @@ $(function() {
     	// prevent jump-down
     	return false;
     });
+    
+    // ScrollMagic Options/implementation.
+    var sections = [];
+    $('section, footer').each(function(i, el) {
+      $('#scroll-navigation').append('<a href="#' + $(this).attr('id') + '">&#9679;</a>');
+    });
+    
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        duration: $('section').height(),
+        triggerHook: .025,
+        reverse: true
+      }
+    });
+    
+    controller.scrollTo(function(target) {
+      TweenMax.to(window, 0.5, {
+        scrollTo : {
+          y : target,
+          autoKill : true
+        },
+        ease : Cubic.easeInOut
+      });
+    });
+    
+
   });
 });
