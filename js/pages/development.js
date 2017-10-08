@@ -47,10 +47,9 @@ $(function() {
     	return false;
     });
     
-    // ScrollMagic Options/implementation.
-    var sections = [];
+    // ScrollMagic options.
     $('section, footer').each(function(i, el) {
-      $('#scroll-navigation').append('<a href="#' + $(this).attr('id') + '">&#9679;</a>');
+      $('#scroll-navigation').append('<a class="scroll-link" href="#' + $(this).attr('id') + '">&#9679;</a>');
     });
     
     var controller = new ScrollMagic.Controller({
@@ -71,6 +70,16 @@ $(function() {
       });
     });
     
-
+    $(document).on('click', '.scroll-link', function(e) {
+      var id = $(this).attr("href"); // grab the href attribute value
+    
+      if($(id).length > 0) {
+        // prevents default behavior of links.
+        e.preventDefault();
+        
+        // trigger scroll
+        controller.scrollTo(id);
+      }
+    });
   });
 });

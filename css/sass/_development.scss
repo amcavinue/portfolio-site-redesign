@@ -411,6 +411,34 @@ header {
   }
 }
 
+#scroll-navigation {
+  @include round-corners;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  padding: 0.25em 0.5em;
+  background-color: $color-13;
+  opacity: 0.75;
+  
+  a {
+    color: $color-0;
+    text-decoration: none;
+    opacity: 0.5;
+    display: block;
+    height: 0.9em;
+    line-height: 0.25em;
+    margin-top: 0.25em;
+    
+    &:hover {
+      opacity: 1;
+    }
+    
+    &:active {
+      opacity: 0.75;
+    }
+  }
+}
+
 /*** Load the images into their containers here. ***/
 .img-1 {
   background-image: url('/content/development/ecommerce-wishlist-1.jpg');

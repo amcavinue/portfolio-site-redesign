@@ -967,6 +967,33 @@ header {
     font-size: 1.2em;
     font-weight: bold; }
 
+#scroll-navigation {
+  /* Rounded corners */
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+  /* future proofing */
+  -khtml-border-radius: 0.2em;
+  /* for old Konqueror browsers */
+  position: fixed;
+  right: 0;
+  top: 50%;
+  padding: 0.25em 0.5em;
+  background-color: #ced4d8;
+  opacity: 0.75; }
+  #scroll-navigation a {
+    color: #130101;
+    text-decoration: none;
+    opacity: 0.5;
+    display: block;
+    height: 0.9em;
+    line-height: 0.25em;
+    margin-top: 0.25em; }
+    #scroll-navigation a:hover {
+      opacity: 1; }
+    #scroll-navigation a:active {
+      opacity: 0.75; }
+
 /*** Load the images into their containers here. ***/
 .img-1 {
   background-image: url("/content/development/ecommerce-wishlist-1.jpg"); }
