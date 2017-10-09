@@ -17,7 +17,7 @@
     "clean:js": "rimraf js/scripts.min.js js/scripts.js",
     "build:js": "run-s clean:js _build:js",
     "_build:js": "run-s concat:js-all minify:js-all",
-    "concat:js-all": "cat js/dependencies/jquery-3.1.1.min.js js/dependencies/* js/templates/* > js/scripts.js",
+    "concat:js-all": "cat js/dependencies/* js/templates/* > js/scripts.js",
     "minify:js-all": "minify --output js/scripts.min.js js/scripts.js"
   },
   "author": "Aaron McAvinue",

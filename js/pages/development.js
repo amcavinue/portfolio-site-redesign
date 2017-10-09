@@ -70,7 +70,33 @@ function scrollNav() {
 }
 
 function carouselProgress() {
-  
+  var percent = 0,
+    	interval = 100,
+    	$bar = $('.carousel-progress-bar'),
+    	$crsl = $('#testimonials-carousel');
+	$('.carousel-indicators li, .carousel-control').click(function (){$bar.css({width:0.5+'%'});});
+	$crsl.carousel({
+		interval: false,
+		pause: true
+	}).on('slide.bs.carousel', function (){percent = 0;});//This event fires immediately when the bootstrap slide instance method is invoked.
+	function progressBarCarousel() {
+		$bar.css({width:percent+'%'});
+		percent = percent +0.5;
+		if (percent>=100) {
+			percent=0;
+			$crsl.carousel('next');
+		}
+	}
+	var barInterval = setInterval(progressBarCarousel, interval);//set interval to progressBarCarousel function
+	if (!(/Mobi/.test(navigator.userAgent))) {//tests if it isn't mobile
+		$crsl.hover(function(){
+					clearInterval(barInterval);
+				},
+				function(){
+					barInterval = setInterval(progressBarCarousel, interval);
+				}
+		);
+	}
 }
 
 $(function() {
