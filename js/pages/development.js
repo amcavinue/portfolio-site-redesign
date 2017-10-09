@@ -48,48 +48,49 @@ $(function() {
     });
     
     // ScrollMagic options.
-    $(window).on('load', function() {
-      var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-          triggerHook: 0.7,
-          reverse: true,
-        }
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 0.7,
+        reverse: true,
+      }
+    });
+    
+    controller.scrollTo(function(target) {
+      TweenMax.to(window, 0.5, {
+        scrollTo : {
+          y : target,
+          autoKill : true
+        },
+        ease : Cubic.easeInOut
       });
-      
-      controller.scrollTo(function(target) {
-        TweenMax.to(window, 0.5, {
-          scrollTo : {
-            y : target,
-            autoKill : true
-          },
-          ease : Cubic.easeInOut
-        });
-      });
-      
-      
-      $('section, footer').each(function(i, el) {
-        $('#scroll-navigation').append('<a class="scroll-link" id="scroll-link-' + i + '" href="#' + $(this).attr('id') + '">&#9679;</a>');
-        var currHeight = $(this).height();
-    	  new ScrollMagic.Scene({
-      	  triggerElement: '#' + $(this).attr('id'),
-      	  duration: $(this).height()
-      	})
-  				.setClassToggle('#scroll-link-' + i, "scroll-active") // add class toggle
-  				.addTo(controller);
-      });
-      $('#scroll-navigation').show();
-      
-      $(document).on('click', '.scroll-link', function(e) {
-        var id = $(this).attr("href"); // grab the href attribute value
-      
-        if($(id).length > 0) {
-          // prevents default behavior of links.
-          e.preventDefault();
-          
-          // trigger scroll
-          controller.scrollTo(id);
-        }
-      });
+    });
+    
+    
+    $('section, footer').each(function(i, el) {
+      $('#scroll-navigation').append('<a class="scroll-link" id="scroll-link-' + i + '" href="#' + $(this).attr('id') + '">&#9679;</a>');
+      // var currHeight = $(this).height();
+      var section = this;
+  	  var scene = new ScrollMagic.Scene({
+    	  triggerElement: '#' + $(this).attr('id'),
+    	  duration: function() {
+    	    return $(section).height();
+    	  }
+    	})
+				.setClassToggle('#scroll-link-' + i, "scroll-active") // add class toggle
+				// .addIndicators() // For debugging.s
+				.addTo(controller);
+    });
+    
+    $(document).on('click', '.scroll-link', function(e) {
+      var id = $(this).attr("href"); // grab the href attribute value
+    
+      if($(id).length > 0) {
+        // prevents default behavior of links.
+        e.preventDefault();
+        
+        // trigger scroll
+        controller.scrollTo(id);
+      }
     });
   });
 });

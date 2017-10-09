@@ -980,8 +980,7 @@ header {
   top: 45%;
   padding: 0.25em 0.5em;
   background-color: #ced4d8;
-  opacity: 0.75;
-  display: none; }
+  opacity: 0.75; }
   #scroll-navigation a {
     color: #130101;
     text-decoration: none;
