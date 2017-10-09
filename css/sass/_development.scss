@@ -135,7 +135,7 @@ header {
       font-weight: 500;
       text-shadow: 2px 0 5px $color-20, 0 -2px 5px $color-20, 0 2px 5px $color-20, -2px 0 5px $color-20;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 1em auto;
     }
     
     .btn-cta {
@@ -173,11 +173,36 @@ header {
     
     li {
       width: 100%;
+      background-color: $color-7;
+      
+      &:hover {
+        background-color: $color-27;
+        
+        a {
+          color: $color-0;
+          font-weight: 500;
+        }
+      }
+      
+      &:active {
+        background-color: $color-7;
+      }
       
       a {
         padding: 0.75em 0;
         margin: 0;
         border: none;
+        color: $color-22;
+        background-color: initial;
+      }
+    }
+    
+    .active {
+      background-color: $color-3;
+      
+      a {
+        color: $color-0;
+        font-weight: 500;
       }
     }
   }
@@ -190,6 +215,8 @@ header {
     margin: 0 auto;
     position: relative;
     top: -0.35em;
+    padding: 2em 1em;
+    text-align: left;
   }
 }
 

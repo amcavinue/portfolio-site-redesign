@@ -736,7 +736,7 @@ header {
       font-weight: 500;
       text-shadow: 2px 0 5px rgba(51, 45, 45, 0.75), 0 -2px 5px rgba(51, 45, 45, 0.75), 0 2px 5px rgba(51, 45, 45, 0.75), -2px 0 5px rgba(51, 45, 45, 0.75);
       max-width: 600px;
-      margin: 0 auto; }
+      margin: 0 auto 1em auto; }
     #intro .what-i-do .btn-cta {
       /* Rounded corners */
       -moz-border-radius: 1em;
@@ -769,11 +769,26 @@ header {
     max-width: 760px;
     width: 100%; }
     #services .nav-tabs li {
-      width: 100%; }
+      width: 100%;
+      background-color: #f1f5f7; }
+      #services .nav-tabs li:hover {
+        background-color: #80acda; }
+        #services .nav-tabs li:hover a {
+          color: #130101;
+          font-weight: 500; }
+      #services .nav-tabs li:active {
+        background-color: #f1f5f7; }
       #services .nav-tabs li a {
         padding: 0.75em 0;
         margin: 0;
-        border: none; }
+        border: none;
+        color: #383838;
+        background-color: initial; }
+    #services .nav-tabs .active {
+      background-color: #fff; }
+      #services .nav-tabs .active a {
+        color: #130101;
+        font-weight: 500; }
   #services .tab-content {
     /* Rounded corners */
     -moz-border-radius: 0.2em;
@@ -786,7 +801,9 @@ header {
     max-width: 760px;
     margin: 0 auto;
     position: relative;
-    top: -0.35em; }
+    top: -0.35em;
+    padding: 2em 1em;
+    text-align: left; }
 
 #testimonials {
   background: #f1f5f7;
