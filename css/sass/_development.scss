@@ -165,56 +165,6 @@ header {
     margin-bottom: 1em;
   }
   
-  .row {
-    margin-bottom: 1em;
-    
-    .service-item-container {
-      padding: 0 0.5em;
-      
-      .service-item {
-        text-align: left;
-        margin-bottom: 0.5em;
-        padding: 1em 0.5em;
-        background: $color-3;
-        box-shadow: 0 0.2em 0.2em $color-12; /* TODO: Abstract this. */
-        height: 100%;
-        color: $color-0;
-        
-        @include round-corners;
-        
-        h3 {
-          text-align: center;
-          color: $color-0;
-        }
-        
-        hr { /* TODO: Abstract this. */
-          margin: 1em auto;
-          border: 1px solid $color-12;
-        }
-        
-        .img-container {
-          height: 6em;
-          width: 6em;
-          text-align: center;
-          border: 3px $color-6 solid;
-          padding: 1.5em;
-          border-radius: 50%;
-          margin: 0 auto;
-          
-          .icon {
-            max-width: 50px;
-            max-height: 50px;
-            margin: 0 auto;
-            opacity: 0.7;
-            
-            &:hover {
-              opacity: 1;
-            }
-          } 
-        }
-      }
-    }
-  }
 }
 
 #testimonials {
