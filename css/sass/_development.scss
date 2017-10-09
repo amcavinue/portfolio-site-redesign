@@ -415,10 +415,11 @@ header {
   @include round-corners;
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 45%;
   padding: 0.25em 0.5em;
   background-color: $color-13;
   opacity: 0.75;
+  display: none;
   
   a {
     color: $color-0;
@@ -436,6 +437,10 @@ header {
     &:active {
       opacity: 0.75;
     }
+  }
+  
+  .scroll-active {
+    opacity: 1;
   }
 }
 

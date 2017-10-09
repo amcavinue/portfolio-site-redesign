@@ -384,10 +384,11 @@ header {
   /* for old Konqueror browsers */
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 45%;
   padding: 0.25em 0.5em;
   background-color: #ced4d8;
-  opacity: 0.75; }
+  opacity: 0.75;
+  display: none; }
   #scroll-navigation a {
     color: #130101;
     text-decoration: none;
@@ -400,6 +401,8 @@ header {
       opacity: 1; }
     #scroll-navigation a:active {
       opacity: 0.75; }
+  #scroll-navigation .scroll-active {
+    opacity: 1; }
 
 /*** Load the images into their containers here. ***/
 .img-1 {
