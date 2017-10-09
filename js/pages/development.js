@@ -99,6 +99,20 @@ function carouselProgress() {
 	}
 }
 
+function equalWidthTabs() {
+  var containerWidth = $('.nav-tabs').width();
+    
+  if (containerWidth > 700) {
+    $('.nav-tabs>li').each(function(i, el) {
+      $(this).width(containerWidth / 5);
+    });
+  } else {
+    $('.nav-tabs>li').each(function(i, el) {
+      $(this).width('100%');
+    });
+  }
+}
+
 $(function() {
   // Load the Handlebars template. 
   loadPartials(function(content) {
@@ -128,5 +142,7 @@ $(function() {
     showMore(765, 765);
     scrollNav();
     carouselProgress();
+    equalWidthTabs();
+    $(window).on('resize', equalWidthTabs);
   });
 });
