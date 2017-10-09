@@ -80,6 +80,7 @@ $(function() {
 				// .addIndicators() // For debugging.s
 				.addTo(controller);
     });
+    $('#scroll-navigation').show();
     
     $(document).on('click', '.scroll-link', function(e) {
       var id = $(this).attr("href"); // grab the href attribute value

@@ -978,17 +978,18 @@ header {
   position: fixed;
   right: 0;
   top: 45%;
-  padding: 0.25em 0.5em;
+  padding: 0.5em 0.5em 0.75em 0.5em;
   background-color: #ced4d8;
-  opacity: 0.75; }
+  opacity: 0.75;
+  display: none; }
   #scroll-navigation a {
     color: #130101;
     text-decoration: none;
     opacity: 0.5;
     display: block;
-    height: 0.9em;
-    line-height: 0.25em;
-    margin-top: 0.25em; }
+    height: 0;
+    line-height: 0;
+    padding: 0.5em 0; }
     #scroll-navigation a:hover {
       opacity: 1; }
     #scroll-navigation a:active {
