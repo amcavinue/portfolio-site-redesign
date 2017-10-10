@@ -6,7 +6,7 @@ $(function() {
     var data = {
       header: {
         id: '',
-        title: 'Full-Stack Software Developer',
+        title: 'Web Developer',
         link: '/',
         otherSite: '/art',
         otherSiteText: 'Also see my artwork >'
@@ -16,7 +16,7 @@ $(function() {
       caseStudyIntroTitle: 'Ecommerce Wishlist',
       caseStudyIntroBlurb: 'A well-engineered app that lets you create a custom wishlist from your favorite products.',
       caseStudySource: 'https://github.com/amcavinue/ecommerce-wishlist',
-      caseStudySite: 'https://github.com/amcavinue/ecommerce-wishlist',
+      caseStudySite: 'https://powerful-island-41601.herokuapp.com/#/',
       caseStudyBody: [
         {
           type: 'p',

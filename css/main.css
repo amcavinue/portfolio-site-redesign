@@ -221,6 +221,21 @@ header {
     #services .tab-content img {
       margin: 0 auto 1em auto;
       display: block; }
+    #services .tab-content ul {
+      list-style-type: none;
+      margin-top: 0.5em; }
+      #services .tab-content ul li {
+        /* Rounded corners */
+        -moz-border-radius: 0.2em;
+        -webkit-border-radius: 0.2em;
+        border-radius: 0.2em;
+        /* future proofing */
+        -khtml-border-radius: 0.2em;
+        /* for old Konqueror browsers */
+        display: inline-block;
+        background: #ced4d8;
+        padding: 0.25em 0.5em;
+        margin: 0.25em; }
 
 #testimonials {
   background: #f1f5f7;

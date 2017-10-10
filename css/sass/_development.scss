@@ -235,6 +235,19 @@ header {
       margin: 0 auto 1em auto;
       display: block;
     }
+    
+    ul {
+      list-style-type: none;
+      margin-top: 0.5em;
+      
+      li {
+        @include round-corners;
+        display: inline-block;
+        background: $color-13;
+        padding: 0.25em 0.5em;
+        margin: 0.25em;
+      }
+    }
   }
 }
 
