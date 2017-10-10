@@ -3,7 +3,7 @@
 }
 
 .container {
-  padding: 2em 0;
+  padding: 2em 0 3em 0;
 }
 
 .wrapper {
@@ -157,12 +157,21 @@ header {
 }
 
 #services {
-  padding: 2em 1em;
+  padding: 2em 0.5em 3em 0.5em;
   background-color: $color-13;
   color: $color-0;
   
   h2 {
     margin-bottom: 1em;
+  }
+  
+  p {
+    margin-bottom: 2em;
+    
+    strong {
+      color: $color-0;
+      text-decoration: none;
+    }
   }
   
   .nav-tabs {
@@ -215,14 +224,23 @@ header {
     margin: 0 auto;
     position: relative;
     top: -0.35em;
-    padding: 2em 1em;
+    padding: 1em 1em 1.5em 1em;
     text-align: left;
+    
+    p {
+      margin-bottom: 0;
+    }
+    
+    img {
+      margin: 0 auto 1em auto;
+      display: block;
+    }
   }
 }
 
 #testimonials {
   background: $color-7;
-  padding: 2em 0.5em;
+  padding: 2em 0.5em 3em 0.5em;
   
   h2 {
     margin-bottom: 1em;
@@ -254,7 +272,7 @@ header {
       
       hr {
         border-color: $color-0;
-        margin: 0.5em auto;
+        margin: 1em auto;
         width: 2em;
       }
       
@@ -280,7 +298,7 @@ header {
   }
   
   .carousel-progress {
-    max-width: 760px;
+    max-width: 450px;
     margin: 0 auto;
     background-color: $color-13;
     margin-top: 1.5em;
@@ -416,7 +434,7 @@ header {
 
 .contact {
     background-color: $color-10;
-    padding: 2em 0.5em;
+    padding: 2em 0.5em 3em 0.5em;
     color: $color-3;
   
   h2 {

@@ -639,7 +639,7 @@ hr {
   padding: 0; }
 
 .container {
-  padding: 2em 0; }
+  padding: 2em 0 3em 0; }
 
 .wrapper {
   padding: 0 0.5em;
@@ -758,11 +758,16 @@ header {
         background-color: #ff4276; }
 
 #services {
-  padding: 2em 1em;
+  padding: 2em 0.5em 3em 0.5em;
   background-color: #ced4d8;
   color: #130101; }
   #services h2 {
     margin-bottom: 1em; }
+  #services p {
+    margin-bottom: 2em; }
+    #services p strong {
+      color: #130101;
+      text-decoration: none; }
   #services .nav-tabs {
     display: inline-block;
     border: none;
@@ -802,12 +807,17 @@ header {
     margin: 0 auto;
     position: relative;
     top: -0.35em;
-    padding: 2em 1em;
+    padding: 1em 1em 1.5em 1em;
     text-align: left; }
+    #services .tab-content p {
+      margin-bottom: 0; }
+    #services .tab-content img {
+      margin: 0 auto 1em auto;
+      display: block; }
 
 #testimonials {
   background: #f1f5f7;
-  padding: 2em 0.5em; }
+  padding: 2em 0.5em 3em 0.5em; }
   #testimonials h2 {
     margin-bottom: 1em; }
   #testimonials .reference {
@@ -830,7 +840,7 @@ header {
         text-align: left; }
       #testimonials #testimonials-carousel .carousel-caption hr {
         border-color: #130101;
-        margin: 0.5em auto;
+        margin: 1em auto;
         width: 2em; }
       #testimonials #testimonials-carousel .carousel-caption h4 {
         margin-top: 0.5em; }
@@ -844,7 +854,7 @@ header {
       #testimonials #testimonials-carousel .carousel-control:active {
         transform: scale(0.95); }
   #testimonials .carousel-progress {
-    max-width: 760px;
+    max-width: 450px;
     margin: 0 auto;
     background-color: #ced4d8;
     margin-top: 1.5em;
@@ -969,7 +979,7 @@ header {
 
 .contact {
   background-color: rgba(39, 39, 39, 0.8);
-  padding: 2em 0.5em;
+  padding: 2em 0.5em 3em 0.5em;
   color: #fff; }
   .contact h2 {
     color: #fff; }
