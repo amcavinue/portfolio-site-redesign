@@ -4,7 +4,7 @@ function renderImages(images) {
     imageHtml +=
       '<div class="col-xs-12 image-card">' +
         '<div class="card-container">' +
-          '<div class="img-container col-md-9" data-description="' + image.filename + '">' +
+          '<div class="img-container col-md-6 col-md-offset-3" data-description="' + image.filename + '">' +
             '<span class="img-helper"></span>' +
             '<img src="../content/loading.gif" data-src="../' + image.src + '">' +
           '</div>' +
