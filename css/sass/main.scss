@@ -15,15 +15,18 @@ $color-28: #ec4a4a; // Red-orange
 $color-29: #ff6262; // Light red-orange
 $color-30: #b9e1ff; // Lighter-blue
 $color-31: #c4d7ff; // Even lighter blue
+$color-34: #505556; // Teal-gray
 
 /* Greyscale */
 $color-0: #130101; // Dark-black
+$color-33: #2b2b2b;
 $color-22: rgb(56, 56, 56);
 $color-10: rgba(39, 39, 39, 0.8);
 $color-20: rgba(51, 45, 45, 0.75);
 $color-12: rgba(51, 45, 45, 0.5);
 $color-13: rgb(206, 212, 216);
 $color-7: #f1f5f7;
+$color-32: #fbfbfb; // Off-white
 $color-3: #fff;    // White
 
 @mixin round-corners {

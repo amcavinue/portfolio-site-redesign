@@ -8,7 +8,7 @@
 
 .wrapper {
   padding: 0 0.5em;
-  background-color: $color-27;
+  background-color: $color-34;
 }
 
 h1, h2 {
@@ -22,7 +22,7 @@ h2, h3 {
 
 header {
   width: 100%;
-  background-color: $color-7;
+  background-color: $color-32;
   padding: 0.5em;
   text-align: left;
   
@@ -87,7 +87,7 @@ header {
 
 #intro {
   background: $color-10;
-  background-image: url('/content/computer-6.jpg');
+  background-image: url('/content/computer-7.jpg');
   background-position: right bottom;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -158,7 +158,7 @@ header {
 
 #services {
   padding: 2em 0.5em 3em 0.5em;
-  background-color: $color-13;
+  background-color: $color-7;
   color: $color-0;
   
   h2 {
@@ -182,7 +182,7 @@ header {
     
     li {
       width: 100%;
-      background-color: $color-7;
+      background-color: $color-13;
       
       &:hover {
         background-color: $color-27;
@@ -252,7 +252,7 @@ header {
 }
 
 #testimonials {
-  background: $color-7;
+  background: $color-32;
   padding: 2em 0.5em 3em 0.5em;
   
   h2 {
@@ -280,7 +280,7 @@ header {
       
       .testimonial-text {
         margin-top: 0.5em;
-        text-align: left;
+        text-align: center;
       }
       
       hr {
@@ -335,7 +335,7 @@ header {
   background-color: $color-13;
   padding: 0.25em 0.35em;
   border-radius: 50%;
-  color: $color-7;
+  color: $color-32;
 }
 
 .work-samples {
@@ -377,7 +377,7 @@ header {
   
   h2 {
     margin-bottom: 1em;
-    color: $color-0;
+    color: $color-3;
   }
   
   .project {
@@ -446,7 +446,7 @@ header {
 }
 
 .contact {
-    background-color: $color-10;
+    background-color: $color-33;
     padding: 2em 0.5em 3em 0.5em;
     color: $color-3;
   
