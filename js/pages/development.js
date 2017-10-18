@@ -104,7 +104,7 @@ function equalWidthTabs() {
     
   if (containerWidth > 700) {
     $('.nav-tabs>li').each(function(i, el) {
-      $(this).width(containerWidth / 5);
+      $(this).width(Math.floor(containerWidth / 5) - 10); // 2 * 5px border
     });
   } else {
     $('.nav-tabs>li').each(function(i, el) {
