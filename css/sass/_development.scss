@@ -183,7 +183,8 @@ header {
     li {
       width: 100%;
       background-color: $color-13;
-      border: 5px solid #f1f5f7;
+      // border: 5px solid #f1f5f7;
+      margin: 5px;
       
       -moz-border-radius: 1em;
       -webkit-border-radius: 1em;
@@ -191,7 +192,7 @@ header {
       -khtml-border-radius: 1em; /* for old Konqueror browsers */
       
       &:hover {
-        background-color: $color-27;
+        background-color: $color-3;
         
         a {
           color: $color-0;
@@ -200,7 +201,7 @@ header {
       }
       
       &:active {
-        background-color: $color-7;
+        transform: scale(0.95);
       }
       
       a {
@@ -213,7 +214,7 @@ header {
     }
     
     .active {
-      background-color: $color-3;
+      background-color: $color-27;
       
       a {
         color: $color-0;
@@ -231,6 +232,7 @@ header {
     position: relative;
     padding: 1em 1em 1.5em 1em;
     text-align: left;
+    box-shadow: 0 0 0.3em rgba(51,45,45,0.5);
     
     p {
       margin-bottom: 0;

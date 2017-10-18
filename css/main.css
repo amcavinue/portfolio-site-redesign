@@ -183,7 +183,7 @@ header {
     #services .nav-tabs li {
       width: 100%;
       background-color: #ced4d8;
-      border: 5px solid #f1f5f7;
+      margin: 5px;
       -moz-border-radius: 1em;
       -webkit-border-radius: 1em;
       border-radius: 1em;
@@ -191,12 +191,12 @@ header {
       -khtml-border-radius: 1em;
       /* for old Konqueror browsers */ }
       #services .nav-tabs li:hover {
-        background-color: #80acda; }
+        background-color: #fff; }
         #services .nav-tabs li:hover a {
           color: #130101;
           font-weight: 500; }
       #services .nav-tabs li:active {
-        background-color: #f1f5f7; }
+        transform: scale(0.95); }
       #services .nav-tabs li a {
         padding: 0.75em 0;
         margin: 0;
@@ -204,7 +204,7 @@ header {
         color: #383838;
         background-color: initial; }
     #services .nav-tabs .active {
-      background-color: #fff; }
+      background-color: #80acda; }
       #services .nav-tabs .active a {
         color: #130101;
         font-weight: 500; }
@@ -221,7 +221,8 @@ header {
     margin: 0 auto;
     position: relative;
     padding: 1em 1em 1.5em 1em;
-    text-align: left; }
+    text-align: left;
+    box-shadow: 0 0 0.3em rgba(51, 45, 45, 0.5); }
     #services .tab-content p {
       margin-bottom: 0; }
     #services .tab-content img {
