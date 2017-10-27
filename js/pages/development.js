@@ -24,7 +24,7 @@ function scrollNav() {
   // ScrollMagic options.
   var controller = new ScrollMagic.Controller({
     globalSceneOptions: {
-      triggerHook: 0.65,
+      triggerHook: 0.55,
       reverse: true,
     }
   });
