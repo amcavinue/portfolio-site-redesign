@@ -1,0 +1,54 @@
+$font-1: 'Questrial', sans-serif;
+$font-2: 'Lato', sans-serif;
+
+/* Accent colors */
+$color-8: #ab3939; // Red
+$color-24: #f15b5b; // Light red
+$color-6: #0a82a7; // Teal-blue
+$color-9: #19abd8; // Light teal
+$color-23: #9dffeb;
+$color-5: #81acff; // Blue
+$color-27: #80acda; // Background blue
+$color-25: #ef366b; // magenta
+$color-26: #ff4276; // light magenta
+$color-28: #ec4a4a; // Red-orange
+$color-29: #ff6262; // Light red-orange
+$color-30: #b9e1ff; // Lighter-blue
+$color-31: #c4d7ff; // Even lighter blue
+$color-34: #505556; // Teal-gray
+
+/* Greyscale */
+$g0: #000;
+$g1: #141414; // Off-black
+$g2: #2b2b2b;
+$g3: #383838;
+$g4: #444444;
+$g5: #5e5e5e;
+$g6: #7a7a7a;
+$g7: #939393;
+$g8: #b2b2b2;
+$g9: #c6c6c6;
+$g10: #dbdbdb;
+$g11: #eaeaea;
+$g12: #f7f7f7; // Off-white
+$g13: #fff;
+
+@mixin round-corners {
+  /* Rounded corners */
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em; /* future proofing */
+  -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
+}
+
+@mixin button-general {
+  /* Rounded corners */
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em; /* future proofing */
+  -khtml-border-radius: 1em; /* for old Konqueror browsers */
+  
+  &:active {
+    transform: scale(0.95);
+  }
+}

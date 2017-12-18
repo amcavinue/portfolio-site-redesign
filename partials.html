@@ -19,8 +19,8 @@
   </header>
 </script>
 
-<script id="intro" type="text/x-handlebars-template">
-  <section id="intro">
+<script id="dev-intro" type="text/x-handlebars-template">
+  <section id="dev-intro">
     <div class="row what-i-do">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         <div class="row">
@@ -371,9 +371,15 @@
 <!--<script id="services" type="text/x-handlebars-template">
 </script>-->
 
+<script id="front-intro" type="text/x-handlebars-template">
+  <section id="front-intro">
+  </section>
+</script>
+
 <script id="development-page" type="text/x-handlebars-template">
   {{> header}}
-  {{> intro}}
+  {{> frontIntro}}
+  {{> devIntro}}
   {{> services}}
   {{> testimonials}}
   {{> workSamples}}

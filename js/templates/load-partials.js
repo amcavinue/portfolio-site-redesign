@@ -16,7 +16,9 @@ function loadPartials(done) {
       caseStudyBody: content.filter('#caseStudyBody').html(),
       caseStudyBanner: content.filter('#caseStudyBanner').html(),
       caseStudyMore: content.filter('#caseStudyMore').html(),
-      scrollNav: content.filter('#scrollNav').html()
+      scrollNav: content.filter('#scrollNav').html(),
+      frontIntro: content.filter('#front-intro').html(),
+      devIntro: content.filter('#dev-intro').html()
     });
     
     done(content);

@@ -1,0 +1,37 @@
+#front-intro {
+  height: 100vh;
+  background-color: $g2;
+}
+
+#scroll-navigation {
+  @include round-corners;
+  position: fixed;
+  right: 0;
+  top: 45%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  background-color: $g10;
+  opacity: 0.75;
+  display: none;
+  
+  a {
+    color: $g1;
+    text-decoration: none;
+    opacity: 0.5;
+    display: block;
+    height: 0;
+    line-height: 0;
+    padding: 0.5em 0;
+    
+    &:hover {
+      opacity: 1;
+    }
+    
+    &:active {
+      opacity: 0.75;
+    }
+  }
+  
+  .scroll-active {
+    opacity: 1;
+  }
+}

@@ -1,91 +1,4 @@
-.container-fluid {
-  padding: 0;
-}
-
-.container {
-  padding: 2em 0 3em 0;
-}
-
-.wrapper {
-  padding: 0 0.5em;
-  background-color: $g5;
-}
-
-h1, h2 {
-  font-family: $font-1;
-}
-
-h2, h3 {
-  font-weight: 500;
-  color: $g1;
-}
-
-header {
-  width: 100%;
-  background-color: $g13;
-  padding: 0.5em;
-  text-align: left;
-  
-  .name {
-    display: inline;
-    
-    .name-link {
-      color: inherit;
-      
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    
-    h1 {
-      margin: 0 0.25em 0.25em 0;
-      font-weight: 300;
-      display: inline;
-    }
-    
-    h4 {
-      margin: 0 1em 1em 0;
-      display: inline;
-    }
-  }
-  
-  .social {
-    display: inline;
-    float: right;
-    white-space: nowrap;
-    position: relative;
-    top: 0.5em;
-    margin-left: 1em;
-    
-    a {
-      font-size: 1.5em;
-      color: $g3;
-      text-decoration: none;
-      padding-right: 0.25em;
-      
-      &:hover {
-        color: $color-8;
-      }
-    }
-  }
-  
-  .other-site {
-    color: $color-5;
-    font-weight: bold;
-    font-size: 1em;
-    float: right;
-    margin-top: 0.3em;
-    position: relative;
-    top: 0.25em;
-    
-    &:hover {
-      color: $color-5;
-      text-decoration: underline;
-    }
-  }
-}
-
-#intro {
+#dev-intro {
   background: $g4;
   background-image: url('/content/computer-7.jpg');
   background-position: right bottom;
@@ -158,7 +71,7 @@ header {
 
 #services {
   padding: 2em 0.5em 3em 0.5em;
-  background-color: $g11;
+  background-color: $g12;
   color: $g1;
   
   h2 {
@@ -471,39 +384,6 @@ header {
     color: $color-25;
     font-size: 1.2em;
     font-weight: bold;
-  }
-}
-
-#scroll-navigation {
-  @include round-corners;
-  position: fixed;
-  right: 0;
-  top: 45%;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  background-color: $g10;
-  opacity: 0.75;
-  display: none;
-  
-  a {
-    color: $g1;
-    text-decoration: none;
-    opacity: 0.5;
-    display: block;
-    height: 0;
-    line-height: 0;
-    padding: 0.5em 0;
-    
-    &:hover {
-      opacity: 1;
-    }
-    
-    &:active {
-      opacity: 0.75;
-    }
-  }
-  
-  .scroll-active {
-    opacity: 1;
   }
 }
 

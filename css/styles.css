@@ -696,7 +696,11 @@ header {
       color: #81acff;
       text-decoration: underline; }
 
-#intro {
+#front-intro {
+  height: 100vh;
+  background-color: #2b2b2b; }
+
+#dev-intro {
   background: #444444;
   background-image: url("/content/computer-7.jpg");
   background-position: right bottom;
@@ -709,35 +713,35 @@ header {
   padding: 0 0.5em;
   color: #fff;
   position: relative; }
-  #intro h2 {
+  #dev-intro h2 {
     text-align: center;
     color: #fff;
     font-weight: 700;
     text-shadow: 2px 0 5px #5e5e5e, 0 -2px 5px #5e5e5e, 0 2px 5px #5e5e5e, -2px 0 5px #5e5e5e;
     max-width: 600px;
     margin: 0 auto 1.5em auto; }
-  #intro #enterprise-app {
+  #dev-intro #enterprise-app {
     max-width: 100%; }
-  #intro hr {
+  #dev-intro hr {
     margin-left: auto;
     margin-right: auto; }
-  #intro #avatar {
+  #dev-intro #avatar {
     margin: 1em 0;
     border-radius: 50%;
     max-width: 200px; }
-  #intro .what-i-do {
+  #dev-intro .what-i-do {
     text-align: center;
     font-size: 1.3em;
     color: #fff;
     padding: 5em 0; }
-    #intro .what-i-do #blurb {
+    #dev-intro .what-i-do #blurb {
       text-align: left;
       font-size: 0.8em;
       font-weight: 500;
       text-shadow: 2px 0 5px #5e5e5e, 0 -2px 5px #5e5e5e, 0 2px 5px #5e5e5e, -2px 0 5px #5e5e5e;
       max-width: 600px;
       margin: 0 auto 1em auto; }
-    #intro .what-i-do .btn-cta {
+    #dev-intro .what-i-do .btn-cta {
       /* Rounded corners */
       -moz-border-radius: 1em;
       -webkit-border-radius: 1em;
@@ -752,14 +756,14 @@ header {
       font-size: 0.75em;
       background-color: #ef366b;
       outline: none; }
-      #intro .what-i-do .btn-cta:active {
+      #dev-intro .what-i-do .btn-cta:active {
         transform: scale(0.95); }
-      #intro .what-i-do .btn-cta:hover {
+      #dev-intro .what-i-do .btn-cta:hover {
         background-color: #ff4276; }
 
 #services {
   padding: 2em 0.5em 3em 0.5em;
-  background-color: #eaeaea;
+  background-color: #f7f7f7;
   color: #141414; }
   #services h2 {
     margin-bottom: 1em; }
