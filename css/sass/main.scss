@@ -18,16 +18,20 @@ $color-31: #c4d7ff; // Even lighter blue
 $color-34: #505556; // Teal-gray
 
 /* Greyscale */
-$color-0: #130101; // Dark-black
-$color-33: #2b2b2b;
-$color-22: rgb(56, 56, 56);
-$color-10: rgba(39, 39, 39, 0.8);
-$color-20: rgba(51, 45, 45, 0.75);
-$color-12: rgba(51, 45, 45, 0.5);
-$color-13: rgb(206, 212, 216);
-$color-7: #f1f5f7;
-$color-32: #fbfbfb; // Off-white
-$color-3: #fff;    // White
+$g0: #000;
+$g1: #141414; // Off-black
+$g2: #2b2b2b;
+$g3: #383838;
+$g4: #444444;
+$g5: #5e5e5e;
+$g6: #7a7a7a;
+$g7: #939393;
+$g8: #b2b2b2;
+$g9: #c6c6c6;
+$g10: #dbdbdb;
+$g11: #eaeaea;
+$g12: #f7f7f7; // Off-white
+$g13: #fff;
 
 @mixin round-corners {
   /* Rounded corners */
@@ -60,7 +64,7 @@ body {
   font-weight: 300;
   font-family: $font-2;
   line-height: 1.5em;
-  color: $color-22;
+  color: $g2;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -72,7 +76,7 @@ body {
   background: -moz-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
   background: linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);*/
   
-  background-color: $color-7;
+  background-color: $g11;
 }
 
 strong {

@@ -1,13 +1,13 @@
 #art-wrapper {
-  background-color: $color-3;
+  background-color: $g13;
 }
 
 #art-header {
   background-color: rgba(21, 21, 21, 0.8);
-  color: $color-3;
+  color: $g13;
   
   .social a {
-    color: $color-3;
+    color: $g13;
     
     &:hover {
       color: #923232;
@@ -21,17 +21,17 @@
   font-weight: 300;
   font-family: $font-2;
   line-height: 1.5em;
-  color: $color-22;
+  color: $g3;
   background: #fafafb;
   overflow-x: hidden;
 }
 
 #art-intro {
   background-color: #dedede;
-  color: $color-0;
+  color: $g1;
   
   legend {
-    color: $color-3;
+    color: $g13;
     border-bottom: none;
   }
   
@@ -46,7 +46,7 @@
           margin-bottom: 1em;
           
           input {
-            color: $color-22;
+            color: $g3;
             border: none;
             padding: 0.25em 0.5em;
             margin-left: 0.5em;
@@ -75,7 +75,7 @@
       overflow: auto;
       margin-bottom: 1em;
       padding: 0.5em;
-      background-color: $color-3;
+      background-color: $g13;
       max-width: 75%;
       margin: 0 auto 1em auto;
       @include round-corners;
@@ -84,7 +84,7 @@
           display: inline;
           list-style-type: none;
           padding-right: 1em;
-          color: $color-22;
+          color: $g3;
           
           .checkbox {
               display: inline;

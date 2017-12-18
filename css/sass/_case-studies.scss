@@ -4,7 +4,7 @@
   font-weight: 300;
   font-family: $font-2;
   line-height: 1.5em;
-  color: $color-22;
+  color: $g3;
   background: #fafafb;
   overflow-x: hidden;
   
@@ -21,7 +21,7 @@
   
   hr {
     margin: 1em auto;
-    border-color: $color-0;
+    border-color: $g1;
   }
   
   .intro {
@@ -53,19 +53,19 @@
       
       &:hover {
         background-color: $color-6;
-        color: $color-3;
+        color: $g13;
       }
     }
     
     .btn-site {
       background-color: transparent;
-      border: $color-0 solid 1px;
+      border: $g1 solid 1px;
       margin-bottom: 0.5em;
-      color: $color-0;
+      color: $g1;
       
       &:hover {
-        background-color: $color-0;
-        color: $color-3;
+        background-color: $g1;
+        color: $g13;
       }
     }
   }
@@ -85,8 +85,8 @@
     max-height: 500px;
     width: 100%;
     object-fit: cover;
-    border-top: 1px $color-12 solid;
-    border-bottom: 1px $color-12 solid;
+    border-top: 1px $g5 solid;
+    border-bottom: 1px $g5 solid;
     margin: 1em 0;
   }
 }
@@ -98,13 +98,13 @@
   font-weight: 300;
   display: block;
   background-color: transparent;
-  border: $color-0 solid 1px;
-  color: $color-0;
+  border: $g1 solid 1px;
+  color: $g1;
   margin: 0 auto 2em auto;
   max-width: 300px;
   
   &:hover {
-    background-color: $color-0;
-    color: $color-3;
+    background-color: $g1;
+    color: $g13;
   }
 }

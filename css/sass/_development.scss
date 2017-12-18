@@ -8,7 +8,7 @@
 
 .wrapper {
   padding: 0 0.5em;
-  background-color: $color-34;
+  background-color: $g5;
 }
 
 h1, h2 {
@@ -17,12 +17,12 @@ h1, h2 {
 
 h2, h3 {
   font-weight: 500;
-  color: $color-0;
+  color: $g1;
 }
 
 header {
   width: 100%;
-  background-color: $color-32;
+  background-color: $g13;
   padding: 0.5em;
   text-align: left;
   
@@ -59,7 +59,7 @@ header {
     
     a {
       font-size: 1.5em;
-      color: $color-22;
+      color: $g3;
       text-decoration: none;
       padding-right: 0.25em;
       
@@ -86,7 +86,7 @@ header {
 }
 
 #intro {
-  background: $color-10;
+  background: $g4;
   background-image: url('/content/computer-7.jpg');
   background-position: right bottom;
   background-attachment: fixed;
@@ -96,14 +96,14 @@ header {
   background-size: cover;
   text-align: left;
   padding: 0 0.5em;
-  color: $color-3;
+  color: $g13;
   position: relative;
   
   h2 {
     text-align: center;
-    color: $color-3;
+    color: $g13;
     font-weight: 700;
-    text-shadow: 2px 0 5px $color-20, 0 -2px 5px $color-20, 0 2px 5px $color-20, -2px 0 5px $color-20;
+    text-shadow: 2px 0 5px $g5, 0 -2px 5px $g5, 0 2px 5px $g5, -2px 0 5px $g5;
     max-width: 600px;
     margin: 0 auto 1.5em auto;
   }
@@ -126,14 +126,14 @@ header {
   .what-i-do {
     text-align: center;
     font-size: 1.3em;
-    color: $color-3;
+    color: $g13;
     padding: 5em 0;
     
     #blurb {
       text-align: left;
       font-size: 0.8em;
       font-weight: 500;
-      text-shadow: 2px 0 5px $color-20, 0 -2px 5px $color-20, 0 2px 5px $color-20, -2px 0 5px $color-20;
+      text-shadow: 2px 0 5px $g5, 0 -2px 5px $g5, 0 2px 5px $g5, -2px 0 5px $g5;
       max-width: 600px;
       margin: 0 auto 1em auto;
     }
@@ -143,7 +143,7 @@ header {
       
       border: none;
       font-weight: 500;
-      color: $color-3;
+      color: $g13;
       margin: 1em 0;
       font-size: 0.75em;
       background-color: $color-25;
@@ -158,8 +158,8 @@ header {
 
 #services {
   padding: 2em 0.5em 3em 0.5em;
-  background-color: $color-7;
-  color: $color-0;
+  background-color: $g11;
+  color: $g1;
   
   h2 {
     margin-bottom: 1em;
@@ -169,7 +169,7 @@ header {
     margin-bottom: 2em;
     
     strong {
-      color: $color-0;
+      color: $g1;
       text-decoration: none;
     }
   }
@@ -182,7 +182,7 @@ header {
     
     li {
       width: 100%;
-      background-color: $color-13;
+      background-color: $g9;
       // border: 5px solid #f1f5f7;
       margin: 5px;
       
@@ -192,10 +192,10 @@ header {
       -khtml-border-radius: 1em; /* for old Konqueror browsers */
       
       &:hover {
-        background-color: $color-3;
+        background-color: $g13;
         
         a {
-          color: $color-0;
+          color: $g1;
           font-weight: 500;
         }
       }
@@ -208,7 +208,7 @@ header {
         padding: 0.75em 0;
         margin: 0;
         border: none;
-        color: $color-22;
+        color: $g3;
         background-color: initial;
       }
     }
@@ -217,7 +217,7 @@ header {
       background-color: $color-27;
       
       a {
-        color: $color-0;
+        color: $g1;
         font-weight: 500;
       }
     }
@@ -226,7 +226,7 @@ header {
   .tab-content {
     @include round-corners;
     
-    background-color: $color-3;
+    background-color: $g13;
     max-width: 760px;
     margin: 0 auto;
     position: relative;
@@ -250,7 +250,7 @@ header {
       li {
         @include round-corners;
         display: inline-block;
-        background: $color-13;
+        background: $g9;
         padding: 0.25em 0.5em;
         margin: 0.25em;
       }
@@ -259,7 +259,7 @@ header {
 }
 
 #testimonials {
-  background: $color-32;
+  background: $g12;
   padding: 2em 0.5em 3em 0.5em;
   
   h2 {
@@ -277,7 +277,7 @@ header {
     margin-top: 1em;
     
     .carousel-caption {
-      color: $color-0;
+      color: $g1;
       position: static;
       padding: 0;
       text-shadow: none;
@@ -291,7 +291,7 @@ header {
       }
       
       hr {
-        border-color: $color-0;
+        border-color: $g1;
         margin: 1em auto;
         width: 2em;
       }
@@ -302,7 +302,7 @@ header {
     }
     
     .carousel-control {
-      color: $color-22;
+      color: $g3;
       background-image: none;
       width: 5%;
       text-shadow: none;
@@ -320,13 +320,13 @@ header {
   .carousel-progress {
     max-width: 450px;
     margin: 0 auto;
-    background-color: $color-13;
+    background-color: $g10;
     margin-top: 1.5em;
     opacity: 0.75;
     
     .carousel-progress-bar {
       height: 3px;
-      background-color: $color-12;
+      background-color: $g8;
       width: 0;
       margin: 0 0 0 0;
       border: none;
@@ -339,10 +339,10 @@ header {
 /* Override bootstrap styles. */
 .glyphicon-chevron-right:before,
 .glyphicon-chevron-left:before {
-  background-color: $color-13;
+  background-color: $g9;
   padding: 0.25em 0.35em;
   border-radius: 50%;
-  color: $color-32;
+  color: $g12;
 }
 
 .work-samples {
@@ -368,7 +368,7 @@ header {
       border-radius: 2em;
       -khtml-border-radius: 2em;
       
-      color: $color-22;
+      color: $g3;
       background-color: $color-30;
       opacity: 0.8;
       font-weight: 700;
@@ -384,20 +384,20 @@ header {
   
   h2 {
     margin-bottom: 1em;
-    color: $color-3;
+    color: $g13;
   }
   
   .project {
-    color: $color-3;
+    color: $g13;
     padding: 0.5em;
     margin: 1em 0;
-    background-color: $color-20;
-    box-shadow: 0 0.2em 0.2em $color-12;
+    background-color: $g5;
+    box-shadow: 0 0.2em 0.2em $g6;
     
     @include round-corners;
     
     h3 {
-      color: $color-3;
+      color: $g13;
     }
     
     hr {
@@ -408,7 +408,7 @@ header {
       height: 290px;
       background-position: top;
       background-size: cover;
-      border: 2px solid $color-22;
+      border: 2px solid $g3;
       
       @include round-corners;
     }
@@ -435,30 +435,30 @@ header {
       
       &:hover {
         background-color: $color-30;
-        color: $color-22;
+        color: $g2;
       }
     }
     
     .btn-site {
       background-color: transparent;
-      border: $color-3 solid 1px;
+      border: $g13 solid 1px;
       margin-bottom: 0.5em;
       
       &:hover {
-        background-color: $color-3;
-        color: $color-22;
+        background-color: $g13;
+        color: $g3;
       }
     }
   }
 }
 
 .contact {
-    background-color: $color-33;
+    background-color: $g2;
     padding: 2em 0.5em 3em 0.5em;
-    color: $color-3;
+    color: $g13;
   
   h2 {
-    color: $color-3;
+    color: $g13;
   }
   
   #portrait {
@@ -480,12 +480,12 @@ header {
   right: 0;
   top: 45%;
   padding: 0.5em 0.5em 0.5em 0.5em;
-  background-color: $color-13;
+  background-color: $g10;
   opacity: 0.75;
   display: none;
   
   a {
-    color: $color-0;
+    color: $g1;
     text-decoration: none;
     opacity: 0.5;
     display: block;

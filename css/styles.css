@@ -603,7 +603,7 @@ body {
   font-weight: 300;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
-  color: #383838;
+  color: #2b2b2b;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -613,7 +613,7 @@ body {
   background: -ms-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
   background: -moz-linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);
   background: linear-gradient(left,#6b90ca 0%,#bee1fb 20%,#bee1fb 80%, #6b90ca 100%);*/
-  background-color: #f1f5f7; }
+  background-color: #eaeaea; }
 
 strong {
   color: #fff;
@@ -643,18 +643,18 @@ hr {
 
 .wrapper {
   padding: 0 0.5em;
-  background-color: #505556; }
+  background-color: #5e5e5e; }
 
 h1, h2 {
   font-family: "Questrial", sans-serif; }
 
 h2, h3 {
   font-weight: 500;
-  color: #130101; }
+  color: #141414; }
 
 header {
   width: 100%;
-  background-color: #fbfbfb;
+  background-color: #fff;
   padding: 0.5em;
   text-align: left; }
   header .name {
@@ -697,7 +697,7 @@ header {
       text-decoration: underline; }
 
 #intro {
-  background: rgba(39, 39, 39, 0.8);
+  background: #444444;
   background-image: url("/content/computer-7.jpg");
   background-position: right bottom;
   background-attachment: fixed;
@@ -713,7 +713,7 @@ header {
     text-align: center;
     color: #fff;
     font-weight: 700;
-    text-shadow: 2px 0 5px rgba(51, 45, 45, 0.75), 0 -2px 5px rgba(51, 45, 45, 0.75), 0 2px 5px rgba(51, 45, 45, 0.75), -2px 0 5px rgba(51, 45, 45, 0.75);
+    text-shadow: 2px 0 5px #5e5e5e, 0 -2px 5px #5e5e5e, 0 2px 5px #5e5e5e, -2px 0 5px #5e5e5e;
     max-width: 600px;
     margin: 0 auto 1.5em auto; }
   #intro #enterprise-app {
@@ -734,7 +734,7 @@ header {
       text-align: left;
       font-size: 0.8em;
       font-weight: 500;
-      text-shadow: 2px 0 5px rgba(51, 45, 45, 0.75), 0 -2px 5px rgba(51, 45, 45, 0.75), 0 2px 5px rgba(51, 45, 45, 0.75), -2px 0 5px rgba(51, 45, 45, 0.75);
+      text-shadow: 2px 0 5px #5e5e5e, 0 -2px 5px #5e5e5e, 0 2px 5px #5e5e5e, -2px 0 5px #5e5e5e;
       max-width: 600px;
       margin: 0 auto 1em auto; }
     #intro .what-i-do .btn-cta {
@@ -759,14 +759,14 @@ header {
 
 #services {
   padding: 2em 0.5em 3em 0.5em;
-  background-color: #f1f5f7;
-  color: #130101; }
+  background-color: #eaeaea;
+  color: #141414; }
   #services h2 {
     margin-bottom: 1em; }
   #services p {
     margin-bottom: 2em; }
     #services p strong {
-      color: #130101;
+      color: #141414;
       text-decoration: none; }
   #services .nav-tabs {
     display: inline-block;
@@ -775,7 +775,7 @@ header {
     width: 100%; }
     #services .nav-tabs li {
       width: 100%;
-      background-color: #ced4d8;
+      background-color: #c6c6c6;
       margin: 5px;
       -moz-border-radius: 1em;
       -webkit-border-radius: 1em;
@@ -786,7 +786,7 @@ header {
       #services .nav-tabs li:hover {
         background-color: #fff; }
         #services .nav-tabs li:hover a {
-          color: #130101;
+          color: #141414;
           font-weight: 500; }
       #services .nav-tabs li:active {
         transform: scale(0.95); }
@@ -799,7 +799,7 @@ header {
     #services .nav-tabs .active {
       background-color: #80acda; }
       #services .nav-tabs .active a {
-        color: #130101;
+        color: #141414;
         font-weight: 500; }
   #services .tab-content {
     /* Rounded corners */
@@ -833,12 +833,12 @@ header {
         -khtml-border-radius: 0.2em;
         /* for old Konqueror browsers */
         display: inline-block;
-        background: #ced4d8;
+        background: #c6c6c6;
         padding: 0.25em 0.5em;
         margin: 0.25em; }
 
 #testimonials {
-  background: #fbfbfb;
+  background: #f7f7f7;
   padding: 2em 0.5em 3em 0.5em; }
   #testimonials h2 {
     margin-bottom: 1em; }
@@ -850,7 +850,7 @@ header {
     padding: 0;
     margin-top: 1em; }
     #testimonials #testimonials-carousel .carousel-caption {
-      color: #130101;
+      color: #141414;
       position: static;
       padding: 0;
       text-shadow: none;
@@ -861,7 +861,7 @@ header {
         margin-top: 0.5em;
         text-align: center; }
       #testimonials #testimonials-carousel .carousel-caption hr {
-        border-color: #130101;
+        border-color: #141414;
         margin: 1em auto;
         width: 2em; }
       #testimonials #testimonials-carousel .carousel-caption h4 {
@@ -878,12 +878,12 @@ header {
   #testimonials .carousel-progress {
     max-width: 450px;
     margin: 0 auto;
-    background-color: #ced4d8;
+    background-color: #dbdbdb;
     margin-top: 1.5em;
     opacity: 0.75; }
     #testimonials .carousel-progress .carousel-progress-bar {
       height: 3px;
-      background-color: rgba(51, 45, 45, 0.5);
+      background-color: #b2b2b2;
       width: 0;
       margin: 0 0 0 0;
       border: none;
@@ -893,10 +893,10 @@ header {
 /* Override bootstrap styles. */
 .glyphicon-chevron-right:before,
 .glyphicon-chevron-left:before {
-  background-color: #ced4d8;
+  background-color: #c6c6c6;
   padding: 0.25em 0.35em;
   border-radius: 50%;
-  color: #fbfbfb; }
+  color: #f7f7f7; }
 
 .work-samples {
   list-style-type: none;
@@ -941,8 +941,8 @@ header {
     color: #fff;
     padding: 0.5em;
     margin: 1em 0;
-    background-color: rgba(51, 45, 45, 0.75);
-    box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+    background-color: #5e5e5e;
+    box-shadow: 0 0.2em 0.2em #7a7a7a;
     /* Rounded corners */
     -moz-border-radius: 0.2em;
     -webkit-border-radius: 0.2em;
@@ -990,7 +990,7 @@ header {
       color: #b9e1ff; }
       .work-samples .project .btn-github:hover {
         background-color: #b9e1ff;
-        color: #383838; }
+        color: #2b2b2b; }
     .work-samples .project .btn-site {
       background-color: transparent;
       border: #fff solid 1px;
@@ -1026,11 +1026,11 @@ header {
   right: 0;
   top: 45%;
   padding: 0.5em 0.5em 0.5em 0.5em;
-  background-color: #ced4d8;
+  background-color: #dbdbdb;
   opacity: 0.75;
   display: none; }
   #scroll-navigation a {
-    color: #130101;
+    color: #141414;
     text-decoration: none;
     opacity: 0.5;
     display: block;
@@ -1115,7 +1115,7 @@ header {
 
 #art-intro {
   background-color: #dedede;
-  color: #130101; }
+  color: #141414; }
   #art-intro legend {
     color: #fff;
     border-bottom: none; }
@@ -1226,7 +1226,7 @@ header {
     min-height: 500px; }
   #case-studies hr {
     margin: 1em auto;
-    border-color: #130101; }
+    border-color: #141414; }
   #case-studies .intro {
     text-align: center;
     position: relative;
@@ -1260,11 +1260,11 @@ header {
         color: #fff; }
     #case-studies .intro .btn-site {
       background-color: transparent;
-      border: #130101 solid 1px;
+      border: #141414 solid 1px;
       margin-bottom: 0.5em;
-      color: #130101; }
+      color: #141414; }
       #case-studies .intro .btn-site:hover {
-        background-color: #130101;
+        background-color: #141414;
         color: #fff; }
   #case-studies .study-section {
     text-align: left;
@@ -1277,8 +1277,8 @@ header {
     max-height: 500px;
     width: 100%;
     object-fit: cover;
-    border-top: 1px rgba(51, 45, 45, 0.5) solid;
-    border-bottom: 1px rgba(51, 45, 45, 0.5) solid;
+    border-top: 1px #5e5e5e solid;
+    border-bottom: 1px #5e5e5e solid;
     margin: 1em 0; }
 
 .btn-see-more {
@@ -1293,12 +1293,12 @@ header {
   font-weight: 300;
   display: block;
   background-color: transparent;
-  border: #130101 solid 1px;
-  color: #130101;
+  border: #141414 solid 1px;
+  color: #141414;
   margin: 0 auto 2em auto;
   max-width: 300px; }
   .btn-see-more:active {
     transform: scale(0.95); }
   .btn-see-more:hover {
-    background-color: #130101;
+    background-color: #141414;
     color: #fff; }
