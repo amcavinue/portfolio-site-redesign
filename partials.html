@@ -1,21 +1,28 @@
 <script id="header" type="text/x-handlebars-template">
   <header id="{{header.id}}">
-    <div class="name">
-      <a class="name-link" href="{{header.link}}">
-        <h1>Aaron McAvinue</h1>
-        <h4>{{header.title}}</h4>
-      </a> 
+    <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
     </div>
     
-    <div class="social">
-      <a href="mailto:aaronmcavinue@gmail.com" class="socicon-mail"></a>
-      <a href="https://www.twitter.com/aaronmcavinue" target="_blank" class="socicon-twitter"></a>
-      <a href="https://www.instagram.com/aaronmcavinue" target="_blank" class="socicon-instagram"></a>
-      <a href="https://www.linkedin.com/in/amcavinue" target="_blank" class="socicon-linkedin"></a>
-      <a href="https://www.github.com/amcavinue" target="_blank" class="socicon-github"></a>
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li ><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social">
+          <a href="mailto:aaronmcavinue@gmail.com" class="socicon-mail"></a>
+          <a href="https://www.twitter.com/aaronmcavinue" target="_blank" class="socicon-twitter"></a>
+          <a href="https://www.instagram.com/aaronmcavinue" target="_blank" class="socicon-instagram"></a>
+          <a href="https://www.linkedin.com/in/amcavinue" target="_blank" class="socicon-linkedin"></a>
+          <a href="https://www.github.com/amcavinue" target="_blank" class="socicon-github"></a>
+        </div>
+      </nav>
     </div>
-    
-    <a class="other-site" href="{{header.otherSite}}">{{header.otherSiteText}}</a>
   </header>
 </script>
 

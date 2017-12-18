@@ -1,64 +1,177 @@
 header {
   width: 100%;
-  background-color: $g13;
-  padding: 0.5em;
   text-align: left;
+  height: 0;
   
-  .name {
-    display: inline;
-    
-    .name-link {
-      color: inherit;
-      
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    
-    h1 {
-      margin: 0 0.25em 0.25em 0;
-      font-weight: 300;
-      display: inline;
-    }
-    
-    h4 {
-      margin: 0 1em 1em 0;
-      display: inline;
-    }
-  }
-  
-  .social {
-    display: inline;
-    float: right;
-    white-space: nowrap;
-    position: relative;
-    top: 0.5em;
-    margin-left: 1em;
-    
-    a {
-      font-size: 1.5em;
-      color: $g3;
-      text-decoration: none;
-      padding-right: 0.25em;
-      
-      &:hover {
-        color: $color-8;
-      }
-    }
-  }
-  
-  .other-site {
-    color: $color-5;
-    font-weight: bold;
-    font-size: 1em;
-    float: right;
-    margin-top: 0.3em;
-    position: relative;
-    top: 0.25em;
+  .button_container {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    height: 2em;
+    width: 3em;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
     
     &:hover {
-      color: $color-5;
-      text-decoration: underline;
+      opacity: .7;
+    }
+    
+    &.active {
+      .top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: $g13;
+      }
+      .middle {
+        opacity: 0;
+        background: $g13;
+      }
+      
+      .bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: $g13;
+      }
+    }
+    
+    span {
+      background: $g11;
+      border: none;
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:  all .35s ease;
+      cursor: pointer;
+      
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+      
+      &:nth-of-type(3) {
+        top: 22px;
+      }
+    }
+  }
+  
+  .overlay {
+    position: fixed;
+    background: $g11;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    
+    &.open {
+      opacity: .9;
+      visibility: visible;
+      height: 100%;
+      z-index: 100;
+      
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+        
+        &:nth-of-type(2) {
+          animation-delay: .4s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: .45s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: .50s;
+        }
+      }
+    }
+    
+    nav {
+      position: relative;
+      height: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-family: 'Vollkorn', serif;
+      font-weight: 400;
+      text-align: center;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%; 
+      
+      li {
+        display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
+        position: relative;
+        opacity: 0;
+        
+        a {
+          display: block;
+          position: relative;
+          color: $g11;
+          text-decoration: none;
+          overflow: hidden;
+          
+          &:hover:after,
+           &:focus:after,
+           &:active:after {
+             width: 100%;
+           }
+          
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            transform: translateX(-50%);
+            height: 3px;
+            background: $g11;
+            transition: .35s;
+          }
+        }
+      }
+    }
+    
+    .social {
+      display: inline;
+      float: right;
+      white-space: nowrap;
+      position: relative;
+      top: 0.5em;
+      margin-left: 1em;
+      
+      a {
+        font-size: 1.5em;
+        color: $g3;
+        text-decoration: none;
+        padding-right: 0.25em;
+        
+        &:hover {
+          color: $g12;
+        }
+      }
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
     }
   }
 }

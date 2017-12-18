@@ -130,7 +130,7 @@ $(function() {
         showMore: true
       },
       contact: {
-        portrait: true,
+        portrait: false,
         blurb: 'I look forward to hearing from you and helping achieve your goals.'
       }
     };
@@ -144,5 +144,11 @@ $(function() {
     carouselProgress();
     equalWidthTabs();
     $(window).on('resize', equalWidthTabs);
+    
+    $('#toggle').click(function() {
+     $(this).toggleClass('active');
+     $('#overlay').toggleClass('open');
+    });
+    
   });
 });

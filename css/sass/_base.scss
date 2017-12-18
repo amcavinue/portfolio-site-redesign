@@ -10,7 +10,7 @@ body {
   font-family: $font-2;
   line-height: 1.5em;
   color: $g2;
-  background-color: $g11;
+  background-color: $g2;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -54,6 +54,7 @@ hr {
 
 h1, h2 {
   font-family: $font-1;
+  font-size: 1.75em;
 }
 
 h2, h3 {
