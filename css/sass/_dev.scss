@@ -53,19 +53,15 @@
     }
     
     .btn-cta {
-      @include button-general
+      @include button-general;
       
       border: none;
       font-weight: 500;
       color: $g13;
       margin: 1em 0;
       font-size: 0.75em;
-      background-color: $color-25;
+      background-color: $a1;
       outline: none;
-      
-      &:hover {
-        background-color: $color-26;
-      }
     }
   }
 }
@@ -100,21 +96,21 @@
       // border: 5px solid #f1f5f7;
       margin: 5px;
       
-      -moz-border-radius: 1em;
-      -webkit-border-radius: 1em;
-      border-radius: 1em; /* future proofing */
-      -khtml-border-radius: 1em; /* for old Konqueror browsers */
+      @include button-general;
+      
       
       &:hover {
-        background-color: $g13;
+        @include button-general;
+        background-color: $g1;
         
         a {
-          color: $g1;
+          color: $g13;
           font-weight: 500;
         }
       }
       
       &:active {
+        @include button-general;
         transform: scale(0.95);
       }
       
@@ -122,16 +118,20 @@
         padding: 0.75em 0;
         margin: 0;
         border: none;
-        color: $g3;
+        color: $g1;
         background-color: initial;
       }
     }
     
     .active {
-      background-color: $color-27;
+      @include button-general;
+      
+      background-color: $a1;
       
       a {
-        color: $g1;
+        @include button-general;
+        
+        color: $g13;
         font-weight: 500;
       }
     }
@@ -146,7 +146,7 @@
     position: relative;
     padding: 1em 1em 1.5em 1em;
     text-align: left;
-    box-shadow: 0 0 0.3em rgba(51,45,45,0.5);
+    border: 1px solid $g9;
     
     p {
       margin-bottom: 0;

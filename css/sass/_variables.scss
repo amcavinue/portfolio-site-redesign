@@ -60,6 +60,10 @@ $g13: #fff;
   border-radius: 1em; /* future proofing */
   -khtml-border-radius: 1em; /* for old Konqueror browsers */
   
+  &:hover {
+    opacity: 0.8;
+  }
+  
   &:active {
     transform: scale(0.95);
   }
