@@ -173,7 +173,7 @@
 }
 
 #testimonials {
-  background: $g12;
+  background: $g11;
   padding: 2em 0.5em 3em 0.5em;
   
   h2 {
@@ -282,8 +282,8 @@
       border-radius: 2em;
       -khtml-border-radius: 2em;
       
-      color: $g3;
-      background-color: $color-30;
+      color: $g1;
+      background-color: $a1;
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
@@ -305,8 +305,7 @@
     color: $g13;
     padding: 0.5em;
     margin: 1em 0;
-    background-color: $g5;
-    box-shadow: 0 0.2em 0.2em $g6;
+    background-color: $g4;
     
     @include round-corners;
     
@@ -344,23 +343,24 @@
     .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: $color-30 solid 1px;
-      color: $color-30;
+      border: $g13 solid 1px;
+      color: $g13;
       
       &:hover {
-        background-color: $color-30;
-        color: $g2;
+        background-color: $g13;
+        color: $g0;
       }
     }
     
     .btn-site {
       background-color: transparent;
-      border: $g13 solid 1px;
+      border: $g0 solid 1px;
       margin-bottom: 0.5em;
+      color: $g0;
       
       &:hover {
-        background-color: $g13;
-        color: $g3;
+        background-color: $g0;
+        color: $g13;
       }
     }
   }
@@ -382,7 +382,7 @@
   }
   
   .email {
-    color: $color-25;
+    color: $a1;
     font-size: 1.2em;
     font-weight: bold;
   }

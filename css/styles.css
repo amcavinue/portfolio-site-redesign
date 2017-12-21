@@ -643,7 +643,7 @@ a {
 
 .wrapper {
   padding: 0 0.5em;
-  background-color: #5e5e5e; }
+  background-color: #2b2b2b; }
 
 h1, h2 {
   font-family: "Titillium Web", sans-serif;
@@ -1027,7 +1027,7 @@ header {
         margin: 0.25em; }
 
 #testimonials {
-  background: #f7f7f7;
+  background: #eaeaea;
   padding: 2em 0.5em 3em 0.5em; }
   #testimonials h2 {
     margin-bottom: 1em; }
@@ -1112,8 +1112,8 @@ header {
       -webkit-border-radius: 2em;
       border-radius: 2em;
       -khtml-border-radius: 2em;
-      color: #383838;
-      background-color: #b9e1ff;
+      color: #141414;
+      background-color: #0b90f7;
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
@@ -1132,8 +1132,7 @@ header {
     color: #fff;
     padding: 0.5em;
     margin: 1em 0;
-    background-color: #5e5e5e;
-    box-shadow: 0 0.2em 0.2em #7a7a7a;
+    background-color: #444444;
     /* Rounded corners */
     -moz-border-radius: 0.2em;
     -webkit-border-radius: 0.2em;
@@ -1179,18 +1178,19 @@ header {
     .work-samples .project .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: #b9e1ff solid 1px;
-      color: #b9e1ff; }
+      border: #fff solid 1px;
+      color: #fff; }
       .work-samples .project .btn-github:hover {
-        background-color: #b9e1ff;
-        color: #2b2b2b; }
+        background-color: #fff;
+        color: #000; }
     .work-samples .project .btn-site {
       background-color: transparent;
-      border: #fff solid 1px;
-      margin-bottom: 0.5em; }
+      border: #000 solid 1px;
+      margin-bottom: 0.5em;
+      color: #000; }
       .work-samples .project .btn-site:hover {
-        background-color: #fff;
-        color: #383838; }
+        background-color: #000;
+        color: #fff; }
 
 .contact {
   background-color: #2b2b2b;
@@ -1203,7 +1203,7 @@ header {
     border-radius: 50%;
     width: 160px; }
   .contact .email {
-    color: #ef366b;
+    color: #0b90f7;
     font-size: 1.2em;
     font-weight: bold; }
 
@@ -1368,104 +1368,3 @@ header {
     text-align: center; }
   #art-intro .tag-list-container {
     max-width: 100%; } }
-
-#case-studies {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-  font-family: "Titillium Web", sans-serif;
-  line-height: 1.5em;
-  color: #383838;
-  background: #fafafb;
-  overflow-x: hidden; }
-  #case-studies .banner {
-    background: rgba(39, 39, 39, 0.8);
-    background-position: center center;
-    background-size: cover;
-    text-align: left;
-    padding: 0 0.5em;
-    color: #fff;
-    position: relative;
-    min-height: 500px; }
-  #case-studies hr {
-    margin: 1em auto;
-    border-color: #141414; }
-  #case-studies .intro {
-    text-align: center;
-    position: relative;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 0.5em; }
-    #case-studies .intro .row {
-      margin-top: 1em; }
-    #case-studies .intro .btn {
-      /* Rounded corners */
-      -moz-border-radius: 1em;
-      -webkit-border-radius: 1em;
-      border-radius: 1em;
-      /* future proofing */
-      -khtml-border-radius: 1em;
-      /* for old Konqueror browsers */
-      border: none;
-      font-size: 1.05em;
-      font-weight: 300;
-      text-align: center; }
-      #case-studies .intro .btn:hover {
-        opacity: 0.8; }
-      #case-studies .intro .btn:active {
-        transform: scale(0.95); }
-    #case-studies .intro .btn-github {
-      background-color: transparent;
-      margin-bottom: 0.5em;
-      margin-right: 1em;
-      border: #0a82a7 solid 1px;
-      color: #0a82a7; }
-      #case-studies .intro .btn-github:hover {
-        background-color: #0a82a7;
-        color: #fff; }
-    #case-studies .intro .btn-site {
-      background-color: transparent;
-      border: #141414 solid 1px;
-      margin-bottom: 0.5em;
-      color: #141414; }
-      #case-studies .intro .btn-site:hover {
-        background-color: #141414;
-        color: #fff; }
-  #case-studies .study-section {
-    text-align: left;
-    margin: 0 auto 2em auto;
-    max-width: 760px;
-    padding: 0 0.5em; }
-    #case-studies .study-section li {
-      margin-left: 1em; }
-  #case-studies .study-img {
-    max-height: 500px;
-    width: 100%;
-    object-fit: cover;
-    border-top: 1px #5e5e5e solid;
-    border-bottom: 1px #5e5e5e solid;
-    margin: 1em 0; }
-
-.btn-see-more {
-  /* Rounded corners */
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-  /* future proofing */
-  -khtml-border-radius: 1em;
-  /* for old Konqueror browsers */
-  font-size: 1.05em;
-  font-weight: 300;
-  display: block;
-  background-color: transparent;
-  border: #141414 solid 1px;
-  color: #141414;
-  margin: 0 auto 2em auto;
-  max-width: 300px; }
-  .btn-see-more:hover {
-    opacity: 0.8; }
-  .btn-see-more:active {
-    transform: scale(0.95); }
-  .btn-see-more:hover {
-    background-color: #141414;
-    color: #fff; }
