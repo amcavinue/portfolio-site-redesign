@@ -150,5 +150,6 @@ $(function() {
      $('#overlay').toggleClass('open');
     });
     
+    AOS.init();
   });
 });
