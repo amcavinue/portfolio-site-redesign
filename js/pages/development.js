@@ -67,6 +67,16 @@ function scrollNav() {
       controller.scrollTo(id);
     }
   });
+  
+  $(document).on('click', '.websites-link', function(e) {
+    e.preventDefault();
+    controller.scrollTo('#dev-intro');
+  });
+  
+  $(document).on('click', '.websites-link', function(e) {
+    e.preventDefault();
+    controller.scrollTo('#art');
+  });
 }
 
 function carouselProgress() {
