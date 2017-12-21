@@ -131,7 +131,7 @@ $(function() {
       },
       contact: {
         portrait: false,
-        blurb: 'I look forward to hearing from you and helping achieve your goals.'
+        blurb: 'I look forward to hearing from you and making something amazing.'
       }
     };
     document.body.innerHTML = template(data);

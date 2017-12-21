@@ -1,6 +1,37 @@
 #front-intro {
   height: 100vh;
   background-color: $g2;
+  
+  span {
+    color: $a1;
+    position: relative;
+    top: 50vh;
+  }
+  
+  .front-img {
+    position: relative;
+    top: 45vh;
+    max-width: calc(100% - 2em);
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .site-sections {
+    position: relative;
+    top: 51vh;
+    max-width: 21em;
+    margin: 0 auto;
+    
+    a {
+      color: $g12;
+      text-decoration: underline;
+      text-underline-position: under;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
 #scroll-navigation {
