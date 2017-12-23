@@ -197,7 +197,7 @@ header {
   height: 100vh;
   background-color: #2b2b2b; }
   #front-intro span {
-    color: #0b90f7;
+    color: #f7f7f7;
     position: relative;
     top: 50vh; }
   #front-intro .front-img {
@@ -525,7 +525,7 @@ header {
       -webkit-border-radius: 2em;
       border-radius: 2em;
       -khtml-border-radius: 2em;
-      color: #141414;
+      color: #f7f7f7;
       background-color: #0b90f7;
       opacity: 0.8;
       font-weight: 700;
@@ -691,10 +691,13 @@ header {
 
 #art-intro {
   background-color: #dedede;
-  color: #141414; }
+  color: #141414;
+  padding: 2em 0.5em 3em 0.5em; }
   #art-intro legend {
     color: #fff;
     border-bottom: none; }
+    #art-intro legend h2 {
+      font-size: 1.5em; }
   #art-intro #filter-form {
     margin-bottom: 1em;
     padding: 0 0.5em; }

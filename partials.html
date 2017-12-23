@@ -276,7 +276,7 @@
     <div class="row">
       <div class="col-xs-12 col-md-8 col-md-offset-2">
         <form id="filter-form" action="" method="">
-          <legend><h2>Filters</h2></legend>
+          <legend><h2>My Artwork</h2></legend>
           <fieldset id="filters-fieldset">
             <div class="form-group">
               <label for="name">Image Contains</label>
@@ -381,12 +381,17 @@
 <script id="front-intro" type="text/x-handlebars-template">
   <section id="front-intro">
     <img data-aos="fade-right" class="front-img" src="/content/intro-text.png" alt="The portfolio of Aaron McAvinue" />
-    <span data-aos="fade-left">I make</span>
+    <span data-aos="fade-left">I make:</span>
     <div class="site-sections row" data-aos="fade-left">
       <a class="col-xs-5 col-xs-offset-1 websites-link" href="#" alt="websites">Websites</a>
       <a class="col-xs-5 artwork-link" href="#" alt="artwork">Artwork</a>
     </div>
   </section>
+</script>
+
+<script id="front-art" type="text/x-handlebars-template">
+  <section id="front-art">
+    <h2>See the artwork I make</h2>
 </script>
 
 <script id="development-page" type="text/x-handlebars-template">
@@ -396,6 +401,8 @@
   {{> services}}
   {{> testimonials}}
   {{> workSamples}}
+  {{> introArt}}
+  {{> gallery}}
   {{> contact}}
   {{> scrollNav}}
 </script>

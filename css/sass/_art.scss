@@ -29,10 +29,15 @@
 #art-intro {
   background-color: #dedede;
   color: $g1;
+  padding: 2em 0.5em 3em 0.5em;
   
   legend {
     color: $g13;
     border-bottom: none;
+    
+    h2 {
+      font-size: 1.5em;
+    }
   }
   
   #filter-form {

@@ -161,5 +161,7 @@ $(function() {
     });
     
     AOS.init();
+    
+    artFront();
   });
 });
