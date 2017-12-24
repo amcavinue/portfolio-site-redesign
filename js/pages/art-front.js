@@ -3,7 +3,7 @@ function renderImages(images) {
   images.forEach(function(image, i, arr) {
     imageHtml +=
       '<div class="col-xs-4 col-md-3 image-card">' +
-        '<div class="card-container">' +
+        '<div class="card-container" data-full-img="' + image.src + '">' +
           '<div class="img-container" data-description="' + image.filename + '">' +
             '<span class="img-helper"></span>' +
             '<img src="../content/Eclipse-small.gif" data-src="../' + image.thumb + '">' +
@@ -112,7 +112,11 @@ function artFront() {
   // Gallery modal.
 	$('#js-render-images').delegate('.card-container', 'click', function(){
 		$('.modal-body').empty();
-		$($(this).prev('img')[0]).clone().appendTo('.modal-body');
+		console.log($(this));
+		
+		$('.modal-body').append('<img class="art-full" src="' + $(this).data('full-img') + '" alt="Art image" />');
+		
+		// $($(this).prev('img')[0]).clone().appendTo('.modal-body');
   	$('#image-modal').modal({show:true});
 	});
 }

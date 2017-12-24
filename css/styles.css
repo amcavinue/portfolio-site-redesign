@@ -1387,6 +1387,39 @@ header {
     .image-card .card-container a {
       margin-right: 1em; }
 
+.modal .modal-dialog {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-55%) !important; }
+  .modal .modal-dialog .modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    border: none; }
+    .modal .modal-dialog .modal-content .close {
+      position: absolute;
+      color: white;
+      opacity: 1;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+      font-size: 1.5em;
+      z-index: 1; }
+      .modal .modal-dialog .modal-content .close:hover {
+        color: white;
+        opacity: 0.5; }
+    .modal .modal-dialog .modal-content .modal-body {
+      text-align: center;
+      background-color: transparent; }
+      .modal .modal-dialog .modal-content .modal-body img {
+        object-fit: cover;
+        max-width: 90vw;
+        max-height: 90vh; }
+
+.modal-backdrop.in {
+  opacity: 0.95; }
+
 @media only screen and (max-width: 992px) {
   .image-card {
     text-align: center; }
