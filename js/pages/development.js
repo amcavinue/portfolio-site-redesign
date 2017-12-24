@@ -73,9 +73,9 @@ function scrollNav() {
     controller.scrollTo('#dev-intro');
   });
   
-  $(document).on('click', '.websites-link', function(e) {
+  $(document).on('click', '.artwork-link', function(e) {
     e.preventDefault();
-    controller.scrollTo('#art');
+    controller.scrollTo('#art-intro');
   });
 }
 
@@ -159,6 +159,11 @@ $(function() {
      $(this).toggleClass('active');
      $('#overlay').toggleClass('open');
     });
+    
+    $('.overlay-menu li a').click(function(e) {
+      $('#toggle').toggleClass('active');
+	    $('#overlay').toggleClass('open');
+	  });
     
     AOS.init();
     

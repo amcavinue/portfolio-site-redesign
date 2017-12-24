@@ -130,14 +130,10 @@ header {
         header .overlay.open li:nth-of-type(4) {
           animation-delay: .50s; }
     header .overlay nav {
+      text-align: center;
       position: relative;
-      height: 70%;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 50px;
-      font-family: 'Vollkorn', serif;
-      font-weight: 400;
-      text-align: center; }
+      top: 25%;
+      font-size: 2em; }
     header .overlay ul {
       list-style: none;
       padding: 0;
@@ -151,32 +147,21 @@ header {
         height: calc(100% / 4);
         min-height: 50px;
         position: relative;
-        opacity: 0; }
+        opacity: 0;
+        margin-bottom: 0.25em; }
         header .overlay ul li a {
           display: block;
           position: relative;
-          color: #eaeaea;
+          color: #141414;
           text-decoration: none;
           overflow: hidden; }
-          header .overlay ul li a:hover:after, header .overlay ul li a:focus:after, header .overlay ul li a:active:after {
-            width: 100%; }
-          header .overlay ul li a:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0%;
-            transform: translateX(-50%);
-            height: 3px;
-            background: #eaeaea;
-            transition: .35s; }
+          header .overlay ul li a:hover {
+            opacity: 0.8; }
+          header .overlay ul li a:active {
+            opacity: 1; }
     header .overlay .social {
-      display: inline;
-      float: right;
-      white-space: nowrap;
       position: relative;
-      top: 0.5em;
-      margin-left: 1em; }
+      top: 1em; }
       header .overlay .social a {
         font-size: 1.5em;
         color: #383838;
@@ -690,7 +675,7 @@ header {
   overflow-x: hidden; }
 
 #art-intro {
-  background-color: #dedede;
+  background: #eaeaea;
   color: #141414;
   padding: 2em 0.5em 3em 0.5em; }
   #art-intro legend {

@@ -112,11 +112,7 @@ function artFront() {
   // Gallery modal.
 	$('#js-render-images').delegate('.card-container', 'click', function(){
 		$('.modal-body').empty();
-		console.log($(this));
-		
 		$('.modal-body').append('<img class="art-full" src="' + $(this).data('full-img') + '" alt="Art image" />');
-		
-		// $($(this).prev('img')[0]).clone().appendTo('.modal-body');
   	$('#image-modal').modal({show:true});
 	});
 }
