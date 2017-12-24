@@ -660,7 +660,7 @@ header {
   header .button_container {
     position: fixed;
     top: 5%;
-    right: 2%;
+    right: 1em;
     height: 2em;
     width: 3em;
     cursor: pointer;
@@ -771,16 +771,16 @@ header {
   #front-intro span {
     color: #f7f7f7;
     position: relative;
-    top: 50vh; }
+    top: 45vh; }
   #front-intro .front-img {
     position: relative;
-    top: 45vh;
+    top: 40vh;
     max-width: calc(100% - 2em);
     margin: 0 auto;
     display: block; }
   #front-intro .site-sections {
     position: relative;
-    top: 51vh;
+    top: 46vh;
     max-width: 21em;
     margin: 0 auto; }
     #front-intro .site-sections a {
