@@ -19,7 +19,7 @@
     "_build:js": "run-s concat:js-all minify:js-all",
     "concat:js-all": "cat js/dependencies/* js/templates/* > js/scripts.js",
     "minify:js-all": "minify --output js/scripts.min.js js/scripts.js",
-    "create:thumbs": "thumb -w 100 content/art/2017 content/art/2017"
+    "create:thumbs": "thumb -w 200 content/art/2017 content/art/2017"
   },
   "author": "Aaron McAvinue",
   "license": "UNLICENSED",

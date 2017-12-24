@@ -6,7 +6,7 @@ function renderImages(images) {
         '<div class="card-container">' +
           '<div class="img-container" data-description="' + image.filename + '">' +
             '<span class="img-helper"></span>' +
-            '<img src="../content/loading.gif" data-src="../' + image.thumb + '">' +
+            '<img src="../content/Eclipse-small.gif" data-src="../' + image.thumb + '">' +
           '</div>' +
           /*'<h4>' + image.name + '</h4>' +
           (image.media ? '<span>' + image.media + '</span>' : '') +
