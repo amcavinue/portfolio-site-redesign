@@ -108,4 +108,11 @@ function artFront() {
     $('#js-render-images').empty().append(renderImages(imageData));
     $("img").unveil();
   });
+  
+  // Gallery modal.
+	$('#js-render-images').delegate('.card-container', 'click', function(){
+		$('.modal-body').empty();
+		$($(this).prev('img')[0]).clone().appendTo('.modal-body');
+  	$('#image-modal').modal({show:true});
+	});
 }
