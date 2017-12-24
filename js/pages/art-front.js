@@ -2,7 +2,7 @@ function renderImages(images) {
   var imageHtml = "";
   images.forEach(function(image, i, arr) {
     imageHtml +=
-      '<div class="col-xs-4 col-md-2 image-card">' +
+      '<div class="col-xs-4 col-md-3 image-card">' +
         '<div class="card-container">' +
           '<div class="img-container" data-description="' + image.filename + '">' +
             '<span class="img-helper"></span>' +
