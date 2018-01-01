@@ -72,10 +72,20 @@ $(function() {
         },
       ],
       contact: {
-        portrait: true,
-        blurb: 'I look forward to hearing from you and helping achieve your goals.'
+        portrait: false,
+        blurb: 'I look forward to hearing from you and making something amazing.'
       }
     };
     document.body.innerHTML = template(data);
+    
+    $('#toggle').click(function() {
+     $(this).toggleClass('active');
+     $('#overlay').toggleClass('open');
+    });
+    
+    $('.overlay-menu li a').click(function(e) {
+      $('#toggle').toggleClass('active');
+	    $('#overlay').toggleClass('open');
+	  });
   });
 });
